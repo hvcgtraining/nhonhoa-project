@@ -1,0 +1,19 @@
+.navigation #administrator {
+  position: fixed;
+  left: 0;
+  width: 240px;
+  bottom: 0;
+  background: #3A4B55; }
+
+.navigation .setwidthadmin {
+  width: 54px !important; }
+
+@media only screen and (max-width: 992px) {
+  .navigation #administrator {
+    position: fixed;
+    left: -240px;
+    bottom: 0;
+    background: #3A4B55; }
+  .navigation .setwidthadmin {
+    left: 0px !important;
+    width: 240px !important; } }
