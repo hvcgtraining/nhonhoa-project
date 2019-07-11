@@ -1,0 +1,105 @@
+extends ../layouts/layout.pug
+block main-content
+    .page-container
+        include ../patials/sidebar.pug
+        .page-content
+            h1.text-center Thêm mới định mức cắt tole
+            .form-add-quota-supplies
+                .panel.panel-default
+                    .panel-heading
+                        h6.panel-title
+                            i.icon-grid
+                            |  Thêm định mức vật tư
+                    .panel-body
+                        .col-sm-6
+                            .form-group.col-sm-12
+                                .row
+                                    .form-group.col-sm-6.mg-t1.mg-b1
+                                        label.col-sm-12.control-label Ngày lập: 
+                                        .col-sm-12
+                                            input.form-control(type='date', name="date") 
+                                    
+                            .row
+                                .form-group.col-sm-12
+                                    .form-group.col-sm-6.mg-t1.mg-b1
+                                        label.control-label.col-sm-12 Mã Tole: 
+                                        .col-sm-12
+                                            select.form-control(name='select')
+                                                option(value='opt1') Option
+                                                option(value='opt2') Option 2
+                                                option(value='opt3') Option 3
+                                                option(value='opt4') Option 4
+                                                option(value='opt5') Option 5
+                                                option(value='opt6') Option 6
+                                                option(value='opt7') Option 7
+                                                option(value='opt8') Option 8
+                                    .form-group.col-sm-6.mg-t1.mg-b1
+                                        label.control-label.col-sm-12 Chi Tiết
+                                        .col-sm-12
+                                            input.form-control(type='text', placeholder='NHGS 8kg/8"1F/Jorodan/C')
+                            .row
+                                .form-group.col-sm-12
+                                    .form-group.col-sm-6.mg-t1.mg-b1
+                                        label.control-label.col-sm-12 Mã Chi Tiết: 
+                                        .col-sm-12
+                                            select.form-control(name='select')
+                                                option(value='opt1') Option
+                                                option(value='opt2') Option 2
+                                                option(value='opt3') Option 3
+                                                option(value='opt4') Option 4
+                                                option(value='opt5') Option 5
+                                                option(value='opt6') Option 6
+                                                option(value='opt7') Option 7
+                                                option(value='opt8') Option 8
+                                    .form-group.col-sm-6.mg-t1.mg-b1
+                                        label.control-label.col-sm-12 Chi Tiết  
+                                        .col-sm-12
+                                            input.form-control(type='text', placeholder='NHGS 8kg/8"1F/Jorodan/C')                
+                            .form-group.col-sm-12
+                            
+                                .form-group.mg-t1.mg-b1.mg-b1
+                                    .row
+                                        .col-sm-12
+                                            label.control-label.col-sm-12  Ghi chú   
+                                            .col-sm-12
+                                                input.form-control(type='text', placeholder='Inox 0.8 x 1219')        
+                        .col-sm-6
+                            .form-group.col-sm-12
+                                .row
+                                    .form-group.col-sm-6.mg-t1.mg-b1
+                                        label.col-sm-12.control-label Số chứng từ : 
+                                        .col-sm-12
+                                            input.form-control(type='text') 
+                                    
+                            .row
+                                .form-group.col-sm-12
+                                    
+                                    .form-group.col-sm-6.mg-t1.mg-b1
+                                        label.control-label.col-sm-12  Phương án  
+                                        .col-sm-6
+                                            input.form-control(type='number', placeholder='02')
+                            .row
+                                .form-group.col-sm-12
+                                    
+                                    .form-group.col-sm-6.mg-t1.mg-b1
+                                        label.control-label.col-sm-12  Số lượng I/ tấm  
+                                        .col-sm-6
+                                            input.form-control(type='number', placeholder='100')                
+                            .form-group.col-sm-12
+                            
+                                .form-group.col-sm-12.mg-t1.mg-b1.mg-b1
+                                    .row
+                                        .form-group.mg-t1.mg-b1
+                                            label.control-label.col-sm-12 Loại 
+                                            .col-sm-3
+                                                select.form-control(name='select')
+                                                    option(value='opt1') Option
+                                                    option(value='opt2') Option 2
+                                                    option(value='opt3') Option 3
+                                                    option(value='opt4') Option 4
+                                                    option(value='opt5') Option 5
+                                                    option(value='opt6') Option 6
+                                                    option(value='opt7') Option 7
+                                                    option(value='opt8') Option 8
+                .form-actions.text-right
+                    button.btn.btn-primary(type='submit') Kế tiếp

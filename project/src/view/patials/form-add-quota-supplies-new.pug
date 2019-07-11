@@ -1,0 +1,56 @@
+.panel.panel-default(style="margin-bottom:15px")
+    .panel-heading
+        h6.panel-title Thêm mới
+        .pull-right
+            a.btn.btn-link.btn-icon(href='panel_options.html#')
+                i.icon-wrench
+    .panel-body
+        .form-group
+            label.control-label.col-sm-12 Mã chi tiết: 
+            .form-group
+                .col-sm-5
+                    select.form-control(name='select')
+                        option(value='opt1') G02P01-015
+                        option(value='opt2') G02P01-014
+                        option(value='opt3') G02P01-013
+                        option(value='opt4') G02P01-012
+                        option(value='opt5') G02P01-011
+                        option(value='opt6') G02P01-010
+                        option(value='opt7') G02P01-009
+                        option(value='opt8') G02P01-008
+                .col-sm-7
+                    input.form-control(type='text', placeholder='Inox: 0.80 x220 x1133/20sp')
+        .form-group.col-sm-12.mg-t1.mg-b1
+            label Đơn vị tính:
+            input.form-control(type='number',placeholder="5")
+        .form-group.mg-t1.mg-b1
+        label.col-sm-2.control-label Chi tiết: 
+        .col-sm-10.mg-l--6
+            .block-inner
+                label.checkbox-inline
+                    .checker
+                        span
+                            input.styled(type='checkbox')
+        .form-group
+            label.control-label.col-sm-12 Tìm kiếm: 
+            .form-group
+                .col-sm-5
+                    select.form-control(name='select')
+                        option(value='opt1') G02P01-015
+                        option(value='opt2') G02P01-014
+                        option(value='opt3') G02P01-013
+                        option(value='opt4') G02P01-012
+                        option(value='opt5') G02P01-011
+                        option(value='opt6') G02P01-010
+                        option(value='opt7') G02P01-009
+                        option(value='opt8') G02P01-008
+                .col-sm-7
+                    input.form-control(type='text', placeholder='Nắp khử mùi 120T/90-150T')
+        .form-group.col-sm-12.mg-t1.mg-b1
+            label Đơn vị tính:
+            input.form-control(type='number',placeholder="20")                    
+        .form-group.col-sm-12.mg-t1.mg-b1
+            label Ghi chú:
+            input.form-control(type="text")
+.form-actions.text-right
+    button.btn.btn-primary(type='submit') Thêm mới
