@@ -1,0 +1,22 @@
+.chart-pie {
+  margin-bottom: 4rem; }
+
+.pie-1 {
+  background: white;
+  padding: 3rem 0;
+  -webkit-box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.15); }
+
+canvas {
+  width: 100%;
+  height: 100%; }
+
+.chart-item {
+  height: auto;
+  margin-bottom: 4rem;
+  background: white;
+  padding: 1rem;
+  -webkit-box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.15); }

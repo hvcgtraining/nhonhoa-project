@@ -17,6 +17,12 @@
 ================================================== */
 
 /* Demo list */
+
+body{
+  background-color: #eee;
+}
+
+
 .demo-list { 
   text-align: center; 
   margin: 0; 
@@ -1325,6 +1331,7 @@ body.boxed {
 .page-content {
   margin: 0 25px 0 265px;
   position: relative;
+  padding-bottom: 2rem;
 }
 
 .sidebar-narrow .page-content {
@@ -6810,6 +6817,8 @@ li.plupload_droptext {
   left: auto; 
   right: -30px; 
 }
+
+
 
 .chat .message .message-body { 
   margin-left: 58px; 

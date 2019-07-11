@@ -15,7 +15,9 @@ document.addEventListener('DOMContentLoaded', function () {
       if (event.target == control[i]) {
         show[i].classList.remove('dpl-none');
       } else {
-        show[i].style.display = 'none';
+        // show[i].css({"opacity": "0", "pointer-event": "none"});
+        show[i].style.opacity = '0';
+        show[i].style.pointerEvents = 'none';
         control[i].classList.remove('content-down');
       }
     }
@@ -26,10 +28,13 @@ document.addEventListener('DOMContentLoaded', function () {
       this.classList.toggle('content-down');
       var index = this.nextSibling;
 
-      if (index.style.display === "block") {
-        index.style.display = "none";
+      if (index.style.opacity === "1") {
+        // index.css({"opacity": "0", "pointer-event": "none"});
+        index.style.pointerEvents = "none";
+        index.style.opacity = "0";
       } else {
-        index.style.display = "block";
+        index.style.opacity = "1";
+        index.style.pointerEvents = "auto"; // index.css({"opacity": "1", "pointer-event": "auto"});
       }
     });
   }

@@ -36,3 +36,6 @@
 
 .text-center-custom {
   text-align: center !important; }
+
+.dark-line {
+  border-color: #536572; }
