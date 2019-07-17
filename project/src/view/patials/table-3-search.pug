@@ -1,6 +1,6 @@
 .mt-2
     .table-title.row
-        .field-search.col-10
+        .field-search.col-sm-12.col-12.pd-0.float-none
             .panel.panel-default(style="margin-bottom:15px")
                 .panel-heading
                     h6.panel-title
@@ -9,14 +9,15 @@
                 .panel-body
                     .form-group.col-sm-4.mg-t1
                         form.col-sm-12.search-line.pd-0.bd-0
-                            input.form-control.autocomplete.ui-autocomplete-input(type='text', placeholder='Tìm theo mã', autocomplete='off', style="padding: 9px 10px 10px 32px;")
+                            input.form-control.autocomplete.ui-autocomplete-input(type='text', placeholder='Tìm theo mã', autocomplete='off', style="padding: 9px 10px 10px 32px; width:100%;")
                     .form-group.col-sm-4.mg-t1
                         form.col-sm-12.search-line.pd-0.bd-0
-                            input.form-control.autocomplete.ui-autocomplete-input(type='text', placeholder='Tìm theo tên', autocomplete='off', style="padding: 9px 10px 10px 32px;")
+                            input.form-control.autocomplete.ui-autocomplete-input(type='text', placeholder='Tìm theo tên', autocomplete='off', style="padding: 9px 10px 10px 32px; width:100%;")
                     .form-group.col-sm-4.mg-t1
                         form.col-sm-12.search-line.pd-0.bd-0
-                            input.form-control.autocomplete.ui-autocomplete-input(type='text', placeholder='Tìm theo cấp', autocomplete='off', style="padding: 9px 10px 10px 32px;")
-        .field-filter.col-2
+                            input.form-control.autocomplete.ui-autocomplete-input(type='text', placeholder='Tìm theo cấp', autocomplete='off', style="padding: 9px 10px 10px 32px; width:100%;")
+    .table-title.pd-0
+        .field-filter.float-none.text-right
             label Hiển thị :
             select
                 option(value="") 10
@@ -41,11 +42,11 @@
                     tbody
                         tr
                             td
-                                .btn-control
-                                    button.btn-show +
-                                    .btn-group-func
-                                        span.btn-table Thêm
-                                        span.btn-table Xóa
+                                .btn-control.row
+                                    button.col-6
+                                        i.fas.fa-edit
+                                    button.col-6
+                                        i.fas.fa-trash-alt
                             td 0123
                             td 133
                             td 13/02/19
@@ -54,381 +55,70 @@
                             td 14/02/19
                         tr
                             td
-                                .btn-control
-                                    button.btn-show +
-                                    .btn-group-func
-                                        span.btn-table Thêm
-                                        span.btn-table Xóa
+                                .btn-control.row
+                                    button.col-6
+                                        i.fas.fa-edit
+                                    button.col-6
+                                        i.fas.fa-trash-alt
                             td 0123
-                            td 137
-                            td 13/01/19
+                            td 133
+                            td 13/02/19
                             td 0.00
                             td 0
-                            td 11/04/19
+                            td 14/02/19
                         tr
                             td
-                                .btn-control
-                                    button.btn-show +
-                                    .btn-group-func
-                                        span.btn-table Thêm
-                                        span.btn-table Xóa
+                                .btn-control.row
+                                    button.col-6
+                                        i.fas.fa-edit
+                                    button.col-6
+                                        i.fas.fa-trash-alt
                             td 0123
-                            td 121
-                            td 13/01/19
+                            td 133
+                            td 13/02/19
                             td 0.00
                             td 0
-                            td 14/05/19
+                            td 14/02/19
                         tr
                             td
-                                .btn-control
-                                    button.btn-show +
-                                    .btn-group-func
-                                        span.btn-table Thêm
-                                        span.btn-table Xóa
+                                .btn-control.row
+                                    button.col-6
+                                        i.fas.fa-edit
+                                    button.col-6
+                                        i.fas.fa-trash-alt
                             td 0123
-                            td 111
-                            td 11/02/19
-                            td 1.11
+                            td 133
+                            td 13/02/19
+                            td 0.00
                             td 0
-                            td 14/04/19
+                            td 14/02/19
                         tr
                             td
-                                .btn-control
-                                    button.btn-show +
-                                    .btn-group-func
-                                        span.btn-table Thêm
-                                        span.btn-table Xóa
+                                .btn-control.row
+                                    button.col-6
+                                        i.fas.fa-edit
+                                    button.col-6
+                                        i.fas.fa-trash-alt
                             td 0123
-                            td 111
-                            td 11/02/19
-                            td 1.11
+                            td 133
+                            td 13/02/19
+                            td 0.00
                             td 0
-                            td 14/04/19
+                            td 14/02/19
                         tr
                             td
-                                .btn-control
-                                    button.btn-show +
-                                    .btn-group-func
-                                        span.btn-table Thêm
-                                        span.btn-table Xóa
+                                .btn-control.row
+                                    button.col-6
+                                        i.fas.fa-edit
+                                    button.col-6
+                                        i.fas.fa-trash-alt
                             td 0123
-                            td 111
-                            td 11/02/19
-                            td 1.11
+                            td 133
+                            td 13/02/19
+                            td 0.00
                             td 0
-                            td 14/04/19
-                        tr
-                            td
-                                .btn-control
-                                    button.btn-show +
-                                    .btn-group-func
-                                        span.btn-table Thêm
-                                        span.btn-table Xóa
-                            td 0123
-                            td 111
-                            td 11/02/19
-                            td 1.11
-                            td 0
-                            td 14/04/19
-                        tr
-                            td
-                                .btn-control
-                                    button.btn-show +
-                                    .btn-group-func
-                                        span.btn-table Thêm
-                                        span.btn-table Xóa
-                            td 0123
-                            td 111
-                            td 11/02/19
-                            td 1.11
-                            td 0
-                            td 14/04/19
-                        tr
-                            td
-                                .btn-control
-                                    button.btn-show +
-                                    .btn-group-func
-                                        span.btn-table Thêm
-                                        span.btn-table Xóa
-                            td 0123
-                            td 111
-                            td 11/02/19
-                            td 1.11
-                            td 0
-                            td 14/04/19
-                        tr
-                            td
-                                .btn-control
-                                    button.btn-show +
-                                    .btn-group-func
-                                        span.btn-table Thêm
-                                        span.btn-table Xóa
-                            td 0123
-                            td 111
-                            td 11/02/19
-                            td 1.11
-                            td 0
-                            td 14/04/19
-                        tr
-                            td
-                                .btn-control
-                                    button.btn-show +
-                                    .btn-group-func
-                                        span.btn-table Thêm
-                                        span.btn-table Xóa
-                            td 0123
-                            td 111
-                            td 11/02/19
-                            td 1.11
-                            td 0
-                            td 14/04/19
-                        tr
-                            td
-                                .btn-control
-                                    button.btn-show +
-                                    .btn-group-func
-                                        span.btn-table Thêm
-                                        span.btn-table Xóa
-                            td 0123
-                            td 111
-                            td 11/02/19
-                            td 1.11
-                            td 0
-                            td 14/04/19
-                        tr
-                            td
-                                .btn-control
-                                    button.btn-show +
-                                    .btn-group-func
-                                        span.btn-table Thêm
-                                        span.btn-table Xóa
-                            td 0123
-                            td 111
-                            td 11/02/19
-                            td 1.11
-                            td 0
-                            td 14/04/19
-                        tr
-                            td
-                                .btn-control
-                                    button.btn-show +
-                                    .btn-group-func
-                                        span.btn-table Thêm
-                                        span.btn-table Xóa
-                            td 0123
-                            td 111
-                            td 11/02/19
-                            td 1.11
-                            td 0
-                            td 14/04/19
-                        tr
-                            td
-                                .btn-control
-                                    button.btn-show +
-                                    .btn-group-func
-                                        span.btn-table Thêm
-                                        span.btn-table Xóa
-                            td 0123
-                            td 111
-                            td 11/02/19
-                            td 1.11
-                            td 0
-                            td 14/04/19
-                        tr
-                            td
-                                .btn-control
-                                    button.btn-show +
-                                    .btn-group-func
-                                        span.btn-table Thêm
-                                        span.btn-table Xóa
-                            td 0123
-                            td 111
-                            td 11/02/19
-                            td 1.11
-                            td 0
-                            td 14/04/19
-                        tr
-                            td
-                                .btn-control
-                                    button.btn-show +
-                                    .btn-group-func
-                                        span.btn-table Thêm
-                                        span.btn-table Xóa
-                            td 0123
-                            td 111
-                            td 11/02/19
-                            td 1.11
-                            td 0
-                            td 14/04/19
-                        tr
-                            td
-                                .btn-control
-                                    button.btn-show +
-                                    .btn-group-func
-                                        span.btn-table Thêm
-                                        span.btn-table Xóa
-                            td 0123
-                            td 111
-                            td 11/02/19
-                            td 1.11
-                            td 0
-                            td 14/04/19
-                        tr
-                            td
-                                .btn-control
-                                    button.btn-show +
-                                    .btn-group-func
-                                        span.btn-table Thêm
-                                        span.btn-table Xóa
-                            td 0123
-                            td 111
-                            td 11/02/19
-                            td 1.11
-                            td 0
-                            td 14/04/19
-                        tr
-                            td
-                                .btn-control
-                                    button.btn-show +
-                                    .btn-group-func
-                                        span.btn-table Thêm
-                                        span.btn-table Xóa
-                            td 0123
-                            td 111
-                            td 11/02/19
-                            td 1.11
-                            td 0
-                            td 14/04/19
-                        tr
-                            td
-                                .btn-control
-                                    button.btn-show +
-                                    .btn-group-func
-                                        span.btn-table Thêm
-                                        span.btn-table Xóa
-                            td 0123
-                            td 111
-                            td 11/02/19
-                            td 1.11
-                            td 0
-                            td 14/04/19
-                        tr
-                            td
-                                .btn-control
-                                    button.btn-show +
-                                    .btn-group-func
-                                        span.btn-table Thêm
-                                        span.btn-table Xóa
-                            td 0123
-                            td 111
-                            td 11/02/19
-                            td 1.11
-                            td 0
-                            td 14/04/19
-                        tr
-                            td
-                                .btn-control
-                                    button.btn-show +
-                                    .btn-group-func
-                                        span.btn-table Thêm
-                                        span.btn-table Xóa
-                            td 0123
-                            td 111
-                            td 11/02/19
-                            td 1.11
-                            td 0
-                            td 14/04/19
-                        tr
-                            td
-                                .btn-control
-                                    button.btn-show +
-                                    .btn-group-func
-                                        span.btn-table Thêm
-                                        span.btn-table Xóa
-                            td 0123
-                            td 111
-                            td 11/02/19
-                            td 1.11
-                            td 0
-                            td 14/04/19
-                        tr
-                            td
-                                .btn-control
-                                    button.btn-show +
-                                    .btn-group-func
-                                        span.btn-table Thêm
-                                        span.btn-table Xóa
-                            td 0123
-                            td 111
-                            td 11/02/19
-                            td 1.11
-                            td 0
-                            td 14/04/19
-                        tr
-                            td
-                                .btn-control
-                                    button.btn-show +
-                                    .btn-group-func
-                                        span.btn-table Thêm
-                                        span.btn-table Xóa
-                            td 0123
-                            td 111
-                            td 11/02/19
-                            td 1.11
-                            td 0
-                            td 14/04/19
-                        tr
-                            td
-                                .btn-control
-                                    button.btn-show +
-                                    .btn-group-func
-                                        span.btn-table Thêm
-                                        span.btn-table Xóa
-                            td 0123
-                            td 111
-                            td 11/02/19
-                            td 1.11
-                            td 0
-                            td 14/04/19
-                        tr
-                            td
-                                .btn-control
-                                    button.btn-show +
-                                    .btn-group-func
-                                        span.btn-table Thêm
-                                        span.btn-table Xóa
-                            td 0123
-                            td 111
-                            td 11/02/19
-                            td 1.11
-                            td 0
-                            td 14/04/19
-                        tr
-                            td
-                                .btn-control
-                                    button.btn-show +
-                                    .btn-group-func
-                                        span.btn-table Thêm
-                                        span.btn-table Xóa
-                            td 0123
-                            td 111
-                            td 11/02/19
-                            td 1.11
-                            td 0
-                            td 14/04/19
-                        tr
-                            td
-                                .btn-control
-                                    button.btn-show +
-                                    .btn-group-func
-                                        span.btn-table Thêm
-                                        span.btn-table Xóa
-                            td 0123
-                            td 111
-                            td 11/02/19
-                            td 1.11
-                            td 0
-                            td 14/04/19
+                            td 14/02/19
+
             .tbl-footer
                 table
                     tfood

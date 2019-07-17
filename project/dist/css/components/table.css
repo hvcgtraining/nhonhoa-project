@@ -15,7 +15,7 @@ table {
     .table .tbl-header tr {
       border: 1px solid #ccc; }
       .table .tbl-header tr th:first-child {
-        width: 39px !important; }
+        width: 70px !important; }
   .table .tbl-content {
     max-height: 350px;
     overflow: auto;
@@ -27,7 +27,7 @@ table {
     .table .tbl-content tbody tr {
       border: 1px solid #ccc; }
       .table .tbl-content tbody tr td:first-child {
-        width: 40px !important; }
+        width: 67px !important; }
   .table .tbl-footer {
     background-color: #518CA3; }
     .table .tbl-footer table td {
@@ -161,19 +161,25 @@ td {
 
 .btn-control {
   position: relative; }
-  .btn-control .btn-group-func {
-    position: absolute;
-    opacity: 0;
-    pointer-events: none;
-    border: 1px solid #f5f5f5;
-    z-index: 999;
-    font-weight: 500;
-    left: 100%;
-    top: 0;
+  .btn-control button {
+    background-color: transparent;
+    border: none;
+    outline: none;
     -webkit-transition: all .3s ease;
     -o-transition: all .3s ease;
     -moz-transition: all .3s ease;
     transition: all .3s ease; }
+    .btn-control button:first-child {
+      margin-left: 10px; }
+    .btn-control button i {
+      font-size: 16px;
+      color: #555; }
+    .btn-control button:hover i {
+      color: #222;
+      -webkit-transition: all .3s ease;
+      -o-transition: all .3s ease;
+      -moz-transition: all .3s ease;
+      transition: all .3s ease; }
 
 .show-up {
   position: absolute;
@@ -202,6 +208,9 @@ td {
 
 .dpl-none {
   display: none !important; }
+
+.dpl-block {
+  display: block !important; }
 
 .content-down::before {
   content: "-";

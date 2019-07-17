@@ -2614,7 +2614,7 @@ a.list-group-item-info.active:focus {
 
 
 .form-group {
-  margin-bottom: 20px;
+  margin-bottom: 0px;
 }
 
 .panel .form-group:first-child, 

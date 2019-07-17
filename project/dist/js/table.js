@@ -1,44 +1,47 @@
 "use strict";
-"use strick";
-
-var control = document.querySelectorAll('.btn-show');
-var show = document.querySelectorAll('.btn-group-func'); // popup
+"use strick"; // var control = document.querySelectorAll('.btn-show');
+// var show = document.querySelectorAll('.btn-group-func');
+// popup
 
 var lock = document.querySelector('.btn-lock');
 var popup = document.querySelector('.popup-lock');
 var block = document.querySelector('.btn-lock-open');
 var passin = document.querySelector('.pass-in');
-var error = document.querySelector('.text-vali');
+var error = document.querySelector('.text-vali'); // add
+
+var showBtnadd = document.querySelector('.form-add-show');
+var formShow = document.querySelector('.form-hide');
+showBtnadd.addEventListener('click', function () {
+  formShow.classList.toggle('dpl-block');
+});
 document.addEventListener('DOMContentLoaded', function () {
-  window.onclick = function (event) {
-    for (var i = 0; i < control.length; i++) {
-      if (event.target == control[i]) {
-        show[i].classList.remove('dpl-none');
-      } else {
-        // show[i].css({"opacity": "0", "pointer-event": "none"});
-        show[i].style.opacity = '0';
-        show[i].style.pointerEvents = 'none';
-        control[i].classList.remove('content-down');
-      }
-    }
-  };
-
-  for (var i = 0; i < control.length; i++) {
-    control[i].addEventListener('click', function () {
-      this.classList.toggle('content-down');
-      var index = this.nextSibling;
-
-      if (index.style.opacity === "1") {
-        // index.css({"opacity": "0", "pointer-event": "none"});
-        index.style.pointerEvents = "none";
-        index.style.opacity = "0";
-      } else {
-        index.style.opacity = "1";
-        index.style.pointerEvents = "auto"; // index.css({"opacity": "1", "pointer-event": "auto"});
-      }
-    });
-  }
-
+  // window.onclick = function(event) {
+  //     for(var i = 0; i< control.length; i++){
+  //         if (event.target == control[i]) {
+  //             show[i].classList.remove('dpl-none');
+  //         }else{
+  //             // show[i].css({"opacity": "0", "pointer-event": "none"});
+  //             show[i].style.opacity = '0';
+  //             show[i].style.pointerEvents = 'none';
+  //             control[i].classList.remove('content-down');
+  //         }
+  //     }
+  // }
+  // for (var i = 0; i < control.length; i++) {
+  //     control[i].addEventListener('click', function () {
+  //         this.classList.toggle('content-down');
+  //         var index = this.nextSibling;
+  //         if (index.style.opacity === "1") {
+  //             // index.css({"opacity": "0", "pointer-event": "none"});
+  //             index.style.pointerEvents = "none";
+  //             index.style.opacity = "0";
+  //         } else {
+  //             index.style.opacity = "1";
+  //             index.style.pointerEvents = "auto";
+  //             // index.css({"opacity": "1", "pointer-event": "auto"});
+  //         }
+  //     });
+  // }
   lock.addEventListener('click', function () {
     popup.classList.add('toggleMenu');
   });
@@ -61,8 +64,6 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 $(function () {
   $('#mytbl tr').click(function (e) {
-    console.log('hi');
-    console.log($('#mytbl').height());
     var taikhoan = $(this).closest('.tr').find('td:nth-child(2)').text();
     var matkhau = $(this).closest('.tr').find('td:nth-child(3)').text();
     var hoten = $(this).closest('.tr').find('td:nth-child(4)').text();
