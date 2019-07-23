@@ -378,6 +378,9 @@ td {
 .dark-line {
   border-color: #536572; }
 
+.pd-t-1 {
+  padding-top: 10px; }
+
 .form-hide {
   display: none; }
 
@@ -2164,8 +2167,11 @@ a.ui-button:hover, a.ui-button:focus {
   .inputbox {
     margin-top: 0; } }
 
-.fa-chevron-down {
+.btn i {
   margin: 0 !important; }
+
+.control-label {
+  white-space: nowrap; }
 
 .d-flex {
   display: -webkit-box;

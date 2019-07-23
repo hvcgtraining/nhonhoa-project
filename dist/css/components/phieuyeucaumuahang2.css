@@ -31,5 +31,8 @@
   .inputbox {
     margin-top: 0; } }
 
-.fa-chevron-down {
+.btn i {
   margin: 0 !important; }
+
+.control-label {
+  white-space: nowrap; }
