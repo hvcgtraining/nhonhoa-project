@@ -1,0 +1,154 @@
+extends ../layouts/layout.pug
+block main-content
+    .page-container
+        include ../patials/sidebar.pug
+        .page-content
+            h1.text-center Chi tiết kế hoạch sản xuất
+            h5.text-center tuần lể từ ngày 11/02/2019 đến 16/03/2019
+            .row
+                .col-sm-12
+                    .responsive-table-defaults
+                        table.table-defaults
+                            thead.table-head
+                                tr
+                                    th 
+                                    th Mã chi tiết
+                                    th Tên chi tiết
+                                    th Đơn vị tính
+                                    th Tổng SL sản xuất
+                                    th Thứ 2
+                                    th Thứ 3
+                                    th Thứ 4
+                                    th Thứ 5
+                                    th Thứ 6
+                                    th Thứ 7
+                                    th Chủ nhật
+                                    th Ghi chú
+                            
+                                
+                            tbody.table-body#taodinhmucvattu-ketiep__table
+                                tr                           
+                                    td
+                                        .btn-control.row
+                                            button.col-6
+                                                i.fas.fa-edit
+                                            button.col-6
+                                                i.fas.fa-trash-alt
+
+                                    td I1AZ12-901
+                                    td Bộ kim chỉ thị cân 6"/05 mm
+                                    td Bộ
+                                    td 26.300
+                                    td 4400
+                                    td 4400
+                                    td 4400
+                                    td 4400
+                                    td 4400
+                                    td 4300
+                                    td 
+                                    td 
+                                tr                           
+                                    td
+                                        .btn-control.row
+                                            button.col-6
+                                                i.fas.fa-edit
+                                            button.col-6
+                                                i.fas.fa-trash-alt
+
+                                    td I1AZ12-901
+                                    td Bộ kim chỉ thị cân 6"/05 mm
+                                    td Bộ
+                                    td 26.300
+                                    td 4400
+                                    td 4400
+                                    td 4400
+                                    td 4400
+                                    td 4400
+                                    td 4300
+                                    td 
+                                    td                                  
+                                tr                           
+                                    td
+                                        .btn-control.row
+                                            button.col-6
+                                                i.fas.fa-edit
+                                            button.col-6
+                                                i.fas.fa-trash-alt
+
+                                    td I1AZ12-901
+                                    td Bộ kim chỉ thị cân 6"/05 mm
+                                    td Bộ
+                                    td 26.300
+                                    td 4400
+                                    td 4400
+                                    td 4400
+                                    td 4400
+                                    td 4400
+                                    td 4300
+                                    td 
+                                    td                                     
+                                tr                           
+                                    td
+                                        .btn-control.row
+                                            button.col-6
+                                                i.fas.fa-edit
+                                            button.col-6
+                                                i.fas.fa-trash-alt
+
+                                    td I1AZ12-901
+                                    td Bộ kim chỉ thị cân 6"/05 mm
+                                    td Bộ
+                                    td 26.300
+                                    td 4400
+                                    td 4400
+                                    td 4400
+                                    td 4400
+                                    td 4400
+                                    td 4300
+                                    td 
+                                    td 
+            .row.mg-t2
+                .col-sm-9
+                    .panel.panel-default
+                        .panel-heading
+                            h6.panel-title
+                                i.icon-grid
+                                |  Chi tiết phiếu nhập vật tư
+                        .panel-body
+                            .col-sm-12
+                                .form-group.col-sm-4.mg-t1.mg-b1
+                                    label.control-label Mã khi tiết
+                                    select.form-control(name='select')
+                                        option(value='I1BX05-901') I1BX05-901
+                                        option(value='I1BX05-902') I1BX05-902
+                                        option(value='I1BX05-903') I1BX05-903
+                                        option(value='I1BX05-904') I1BX05-904
+                                        option(value='I1BX05-905') I1BX05-905
+                                        option(value='I1BX05-906') I1BX05-906
+                                        option(value='I1BX05-907') I1BX05-907
+                                        option(value='I1BX05-908') I1BX05-908
+                                .form-group.col-sm-4.mg-t1.mg-b1
+                                    label.control-label  Tên   
+                                    input.form-control(type='text', placeholder='Cụm khung tải cân 12 kg/granite')
+                            .col-sm-12
+                                .form-group.col-sm-12.mg-t1.mg-b1
+                                    label.control-label  Tên
+                                    .d-flex   
+                                        input.form-control(type='text', placeholder='T2')
+                                        input.form-control(type='text', placeholder='T3', style="margin:0px;")
+                                        input.form-control(type='text', placeholder='T4', style="margin:0px;")
+                                        input.form-control(type='text', placeholder='T5', style="margin:0px;")
+                                        input.form-control(type='text', placeholder='T6', style="margin:0px;")
+                                        input.form-control(type='text', placeholder='T7', style="margin:0px;")
+                                        input.form-control(type='text', placeholder='CN', style="margin:0px;")
+                            .form-group.col-sm-12
+                                .form-group.col-sm-12.mg-t1.mg-b1.mg-b1
+                                    label Diễn giải:
+                                    input.form-control(rows='8', cols='5')
+                            .col-sm-12
+                                .form-group.col-sm-12                                
+                                    button.btn.btn-primary(type='submit') Cập nhật
+                .col-sm-1
+                    button.btn.btn-primary(type='submit', style="width: 150px; margin-top: 5px; margin-right: 5px") Cập nhật
+                    button.btn.btn-primary(type='submit',style="width: 150px;  margin-top: 5px; margin-right: 5px") Chuyển
+                    button.btn.btn-primary(type='submit',style="width: 150px;  margin-top: 5px; margin-right: 5px") Hoàn thành

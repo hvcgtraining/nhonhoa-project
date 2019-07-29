@@ -1,0 +1,17 @@
+.panel.panel-default.set-height-1(style="margin-bottom:15px;")
+    .panel-heading
+        h6.panel-title
+            |   Thêm mới
+    .panel-body
+        .form-group.col-sm-12.mg-0
+            include table-2-col.pug  
+        .form-group.col-sm-12
+            .row
+                .form-group.col-sm-6.mg-0
+                    label.control-label Ngày 
+                    input.form-control(type='date', placeholder='06/03/2019')
+                .form-group.col-sm-6.mg-0
+                    label.control-label Số lượng
+                    input.form-control(type='text', placeholder='2000.00')       
+    .form-actions.text-right(style="padding-right:30px").pd-b2
+        button.btn.btn-primary(type='submit') Cập nhật

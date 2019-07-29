@@ -1,0 +1,295 @@
+extends ../layouts/layout.pug
+block main-content
+    .page-container
+        include ../patials/sidebar.pug
+        .page-content
+            h1.text-center Phiếu kiểm hóa
+            .row
+                .col-sm-12
+                    .form-actions.text-left.mg-b1
+                        button.btn.btn-primary(type='submit')
+                            i.fas.fa-edit
+            .panel.panel-default(style='margin-bottom:15px;')
+                .panel-heading
+                    h6.panel-title
+                        i.fas.fa-search(style='line-height:1.5')
+                        |  Phiếu kiểm hóa
+                .panel-body
+                    .row
+                        .col-sm-6.pd-0
+                            .form-group.col-sm-5.mg-t1.mg-b1
+                                label.control-label Ngày giao: 
+                                input.form-control(type='date', name="date")
+                            .form-group.col-sm-7.mg-t1.mg-b1
+                                label.control-label.col-sm-12.pd-0 Tìm kiếm: 
+                                .form-group.mg-t1.mg-b1
+                                    .col-sm-5.pd-0.col-xs-5
+                                        select.form-control(name='select')
+                                            option(value='opt1') N1B0
+                                            option(value='opt2') N1B0
+                                            option(value='opt3') N1B0
+                                            option(value='opt4') N1B0
+                                    .col-sm-7.pd-0.col-xs-7
+                                        input.form-control(type='text', placeholder='Thùng giấy cân 10kg/8*/CDC')
+                        .col-sm-6.pd-0
+                            .form-group.col-sm-12.mg-t1.mg-b1
+                                label Số lượng:
+                                input.form-control(type='text',placeholder="Bộ")
+                    .row
+                        .col-sm-6.pd-0
+                            .form-group.col-sm-5.mg-t1.mg-b1
+                                label.control-label.col-sm-12.pd-0 Tìm kiếm: 
+                                .form-group.mg-t1.mg-b1
+                                    .col-sm-6.pd-0.col-xs-6
+                                        select.form-control(name='select')
+                                            option(value='opt1') 001-888
+                                            option(value='opt2') 001-999
+                                            option(value='opt3') 001-666
+                                            option(value='opt4') 001-777
+                                    .col-sm-6.pd-0.col-xs-6
+                                        select.form-control(name='select')
+                                            option(value='opt1') N11-888
+                                            option(value='opt2') N1-999
+                                            option(value='opt3') N1-666
+                                            option(value='opt4') N1-777
+                            .form-group.col-sm-7.mg-t1.mg-b1
+                                label.control-label.col-sm-12.pd-0 Tìm kiếm: 
+                                .form-group
+                                    .col-sm-5.pd-0.col-xs-5
+                                        select.form-control(name='select')
+                                            option(value='opt1') N1-888
+                                            option(value='opt2') N1-999
+                                            option(value='opt3') N1-666
+                                            option(value='opt4') N1-777
+                                    .col-sm-7.pd-0.col-xs-7
+                                        input.form-control(type='text', placeholder='Thùng giấy cân 10kg/8*/CDC')
+            .row
+                .col-sm-12.mg-t3
+                    .responsive-table-defaults
+                        table.table-defaults
+                            thead.table-head
+                                tr
+                                    th 
+                                    th Mã HĐ
+                                    th Số HĐ
+                                    th Ngày Lập
+                                    th Lượng
+                                    th Tiền
+                                    th Ngày KT
+                                    th Mã HĐ
+                                    th Số HĐ
+                                    th Ngày Lập
+                                    th Lượng
+                                    th Tiền
+                                    th Ngày KT
+                                    th Mã HĐ
+                                    th Số HĐ
+                                    th Ngày Lập
+                                    th Lượng
+                                    th Tiền
+                                    th Ngày KT
+                            tbody.table-body
+                                tr
+                                    td
+                                        .btn-control.row
+                                            button.col-6
+                                                i.fas.fa-edit
+                                            button.col-6
+                                                i.fas.fa-trash-alt
+                                    td 0123
+                                    td 111
+                                    td 11/02/19
+                                    td 1.11
+                                    td 0
+                                    td 14/04/19
+                                    td 0123
+                                    td 111
+                                    td 11/02/19
+                                    td 1.11
+                                    td 0
+                                    td 14/04/19
+                                    td 0123
+                                    td 111
+                                    td 11/02/19
+                                    td 1.11
+                                    td 0
+                                    td 14/04/19
+                                tr
+                                    td
+                                        .btn-control.row
+                                            button.col-6
+                                                i.fas.fa-edit
+                                            button.col-6
+                                                i.fas.fa-trash-alt
+                                    td 0123
+                                    td 111
+                                    td 11/02/19
+                                    td 1.11
+                                    td 0
+                                    td 14/04/19
+                                    td 0123
+                                    td 111
+                                    td 11/02/19
+                                    td 1.11
+                                    td 0
+                                    td 14/04/19
+                                    td 0123
+                                    td 111
+                                    td 11/02/19
+                                    td 1.11
+                                    td 0
+                                    td 14/04/19
+                                tr
+                                    td
+                                        .btn-control.row
+                                            button.col-6
+                                                i.fas.fa-edit
+                                            button.col-6
+                                                i.fas.fa-trash-alt
+                                    td 0123
+                                    td 111
+                                    td 11/02/19
+                                    td 1.11
+                                    td 0
+                                    td 14/04/19
+                                    td 0123
+                                    td 111
+                                    td 11/02/19
+                                    td 1.11
+                                    td 0
+                                    td 14/04/19
+                                    td 0123
+                                    td 111
+                                    td 11/02/19
+                                    td 1.11
+                                    td 0
+                                    td 14/04/19
+                                tr
+                                    td
+                                        .btn-control.row
+                                            button.col-6
+                                                i.fas.fa-edit
+                                            button.col-6
+                                                i.fas.fa-trash-alt
+                                    td 0123
+                                    td 111
+                                    td 11/02/19
+                                    td 1.11
+                                    td 0
+                                    td 14/04/19
+                                    td 0123
+                                    td 111
+                                    td 11/02/19
+                                    td 1.11
+                                    td 0
+                                    td 14/04/19
+                                    td 0123
+                                    td 111
+                                    td 11/02/19
+                                    td 1.11
+                                    td 0
+                                    td 14/04/19
+                                tr
+                                    td
+                                        .btn-control.row
+                                            button.col-6
+                                                i.fas.fa-edit
+                                            button.col-6
+                                                i.fas.fa-trash-alt
+                                    td 0123
+                                    td 111
+                                    td 11/02/19
+                                    td 1.11
+                                    td 0
+                                    td 14/04/19
+                                    td 0123
+                                    td 111
+                                    td 11/02/19
+                                    td 1.11
+                                    td 0
+                                    td 14/04/19
+                                    td 0123
+                                    td 111
+                                    td 11/02/19
+                                    td 1.11
+                                    td 0
+                                    td 14/04/19
+                                tr
+                                    td
+                                        .btn-control.row
+                                            button.col-6
+                                                i.fas.fa-edit
+                                            button.col-6
+                                                i.fas.fa-trash-alt
+                                    td 0123
+                                    td 111
+                                    td 11/02/19
+                                    td 1.11
+                                    td 0
+                                    td 14/04/19
+                                    td 0123
+                                    td 111
+                                    td 11/02/19
+                                    td 1.11
+                                    td 0
+                                    td 14/04/19
+                                    td 0123
+                                    td 111
+                                    td 11/02/19
+                                    td 1.11
+                                    td 0
+                                    td 14/04/19
+                            tfoot.table-foot
+                                tr 
+                                    td Tổng
+                                    td
+                                    td
+                                    td
+                                    td
+                                    td
+                                    td
+                                    td
+                                    td
+                                    td
+                                    td
+                                    td
+                                    td
+                                    td
+                                    td
+                                    td
+                                    td
+                                    td
+                                    td
+        
+            .row
+                .col-sm-6
+                    .row
+                        .col-sm-2
+                            .form-actions.text-left.mg-b1.mg-t3
+                                button.btn.btn-primary(type='submit') In phiếu
+                        .col-sm-7
+                            .form-group.mg-b1.mg-t3
+                                .row
+                                    .col-sm-4
+                                        label.control-label.col-sm-12.mg-t1 Số dòng trắng: 
+                                    .col-sm-8
+                                        select.form-control(name='select')
+                                            option(value='opt1') 10
+                                            option(value='opt2') 25
+                                            option(value='opt3') 50
+                                            option(value='opt4') 100
+                        .col-sm-3
+                            .form-group.mg-b1.mg-t3.pd-t-1
+                                .block-inner
+                                    .checker
+                                            span
+                                                input.styled(type='checkbox')
+                                    label.checkbox-inline In gộp
+                                        
+                .col-sm-6
+                    .form-actions.text-right.col-sm-12.mg-t3.mg-b1.pd-0
+                        button.btn.btn-primary(type='submit') Tạo phiếu yêu cầu cắt tole
+                        button.btn.btn-primary.mg-l-3(type='submit') Cập nhật
+            .form-actions.text-left.mg-b1.mg-t3
+                button.btn.btn-primary(type='submit') Hủy phiếu KH
+                    

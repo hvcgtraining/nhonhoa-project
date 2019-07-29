@@ -1,0 +1,50 @@
+extends ../layouts/layout.pug
+block main-content
+    .page-container
+        include ../patials/sidebar.pug
+        .page-content
+            h1.text-center Chi tiết kế hoạch sản xuất
+            h5.text-center tuần lể từ ngày 25/02/2019 đến 02/03/2019
+            include ../patials/form-tab-chitietkhsx.pug
+            .row
+                .form-group.col-sm-5
+                    .row
+                        .col-sm-12.mg-t3    
+                            .panel.panel-default
+                                .panel-heading
+                                    h6.panel-title
+                                        |   Thêm mới
+                                .panel-body
+                                    .row
+                                        .form-group.col-sm-6.mg-t1.mg-b1
+                                            .form-group.col-sm-12.mg-t1.mg-b1
+                                                label.control-label Số lượng YC: 
+                                                input.form-control(type='text')
+                                            .form-group.col-sm-12.mg-t1.mg-b1
+                                                label.control-label  Ngày cấp hàng:  
+                                                input.form-control(type='date')
+                                        .form-group.col-sm-6.mg-t1.mg-b1
+                                            .form-group.col-sm-12.mg-t1.mg-b1        
+                                                label.control-label Mã vật tư: 
+                                                input.form-control(type='text')
+                                            .form-group.col-sm-12.mg-t1.mg-b1
+                                                label.control-label       
+                                                .form-actions.text-right.mg-t1
+                                                    button.btn.btn-primary(type='submit') Cập nhật 
+                    
+                .form-group.col-sm-7 
+                    .row
+                        .col-sm-12.mg-t3 
+                            .panel.panel-default
+                                .panel-heading
+                                    h6.panel-title
+                                        |   Thêm mới
+                                .panel-body
+                                    .row    
+                                        .form-group.col-sm-12.mg-t1.mg-b1
+                                            label Ghi chú:
+                                            textarea.form-control(rows='5', cols='5')
+            .form-actions.text-right.col-sm-12.mg-t3.mg-b1.pd-0
+                button.btn.btn-primary(type='submit') Lưu
+                button.btn.btn-primary.mg-l-3(type='submit') Tạo kế hoạch sản xuất
+                button.btn.btn-primary.mg-l-3(type='submit') Xuất phiếu

@@ -1,0 +1,51 @@
+extends ../layouts/layout.pug
+block main-content
+    .page-container
+        include ../patials/sidebar.pug
+        .page-content
+            h1.text-center Phiếu yêu cầu mua hàng
+            .panel.panel-default
+                    .panel-heading
+                        h6.panel-title
+                            i.icon-grid
+                            |  Phiếu yêu cầu mua hàng
+                    .panel-body
+                        .col-sm-12
+                            .form-group.col-sm-12
+                                .row
+                                    .col-sm-12.pd-0
+                                        .col-sm-4.pd-0
+                                            label.col-sm-12.control-label Ngày lập: 
+                                            .col-sm-12
+                                                input.form-control(type='date', name="date")
+                                        .col-sm-4.pd-0
+                                            label.col-sm-12.control-label Ngày dự kiến KT:
+                                            .col-sm-12
+                                                input.form-control(type='date', name="date")
+                                        .col-sm-4.pd-0
+                                            label.col-sm-12.control-label Ngày hoàn tất:
+                                            .col-sm-12
+                                                input.form-control(type='date', name="date")
+                            .row
+                                .form-group.col-sm-6.mg-t1.mg-b1
+                                        label.col-sm-12.control-label Y/c KT: 
+                                        .col-sm-12
+                                            input.form-control(type='text')   
+                                .form-group.col-sm-6.mg-t1.mg-b1
+                                        label.col-sm-12.control-label Địa điểm: 
+                                        .col-sm-12
+                                            input.form-control(type='text')     
+                            .row
+                                .form-group.col-sm-6.mg-t1.mg-b1
+                                        label.col-sm-12.control-label V/v: 
+                                        .col-sm-12
+                                            input.form-control(type='text')   
+                                .form-group.col-sm-6.mg-t1.mg-b1
+                                        label.col-sm-12.control-label Mục đích: 
+                                        .col-sm-12
+                                            input.form-control(type='text')
+                            .row
+                                .form-actions.text-right.col-sm-12.mg-t1.mb-4
+                                    .col-sm-12
+                                        .form-group.col-sm-12
+                                            button.btn.btn-primary(type='submit') Kế tiếp 

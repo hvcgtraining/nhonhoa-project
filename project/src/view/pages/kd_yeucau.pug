@@ -1,0 +1,247 @@
+extends ../layouts/layout.pug
+block main-content
+    .page-container
+        include ../patials/sidebar.pug
+        .page-content
+            .row
+                .col-lg-6
+                    .panel.panel-default(style='margin-bottom:15px;')
+                        .panel-heading
+                            h2.panel-title.text-center.float-none.fz-20 
+                                |   Yêu cầu mua hàng
+                        .panel-body
+                            .row.overflow-auto
+                                .col-sm-12
+                                    .responsive-table-defaults
+                                    
+                                        table.table-defaults
+                                            thead.table-head
+                                                tr
+                                                    th 
+                                                    th Số PR (Số PYC)
+                                                    th Ngày Lập
+                                                    th Nội dung
+                                
+                                            tbody.table-body
+                                                tr
+                                                    td
+                                                        .btn-control.row
+                                                            button.col-6
+                                                                i.fas.fa-edit
+                                                            button.col-6
+                                                                i.fas.fa-trash-alt
+                                                    td 19/YC-KH-19
+                                                    td 13/02/19
+                                                    td Mua thùng giấy
+                                                tr
+                                                    td
+                                                        .btn-control.row
+                                                            button.col-6
+                                                                i.fas.fa-edit
+                                                            button.col-6
+                                                                i.fas.fa-trash-alt
+
+                                                    td 19/YC-KH-19
+                                                    td 13/02/19
+                                                    td Mua xăng dầu
+                                                tr
+                                                    td
+                                                        .btn-control.row
+                                                            button.col-6
+                                                                i.fas.fa-edit
+                                                            button.col-6
+                                                                i.fas.fa-trash-alt
+
+                                                    td 
+                                                    td 
+                                                    td 
+
+                            .row
+                                .col-sm-12
+                                    .box-pagination
+                                        .pagination-table
+                                            a(href="#") Xem chi tiết
+                                            
+                .col-lg-6
+                    .panel.panel-default(style='margin-bottom:15px;')
+                        .panel-heading
+                            h2.panel-title.text-center.float-none.fz-20
+                                |  Yêu cầu bán hàng
+                        .panel-body
+                            .row.overflow-auto
+                                .col-sm-12
+                                    .responsive-table
+                                        .table.table-hover.tbl-odd-light.tbl-none
+                                            .tbl-header
+                                                table
+                                                    thead
+                                                        tr
+                                                            th 
+                                                            th Số PR (Số PYC)
+                                                            th Ngày Lập
+                                                            th Khách hàng
+                                            .tbl-content
+                                                table
+                                                    tbody
+                                                        tr
+                                                            td
+                                                                .btn-control.row
+                                                                    button.col-6
+                                                                        i.fas.fa-edit
+                                                                    button.col-6
+                                                                        i.fas.fa-trash-alt
+                                                            td 19/YC-KH-19
+                                                            td 13/02/19
+                                                            td Khách hàng A
+                                                        tr
+                                                            td
+                                                                .btn-control.row
+                                                                    button.col-6
+                                                                        i.fas.fa-edit
+                                                                    button.col-6
+                                                                        i.fas.fa-trash-alt
+
+                                                            td 19/YC-KH-19
+                                                            td 13/02/19
+                                                            td Khách hàng B
+                                                        tr
+                                                            td
+                                                                .btn-control.row
+                                                                    button.col-6
+                                                                        i.fas.fa-edit
+                                                                    button.col-6
+                                                                        i.fas.fa-trash-alt
+
+                                                            td 
+                                                            td 
+                                                            td 
+                            .row
+                                .col-sm-12
+                                    .box-pagination
+                                        .pagination-table
+                                            a(href="#") Xem chi tiết
+
+            .row
+                .col-lg-6
+                    .panel.panel-default(style='margin-bottom:15px;')
+                        .panel-heading
+                            h2.panel-title.text-center.float-none.fz-20
+                                |  Theo dõi xuất hàng
+                        .panel-body
+                            .row.overflow-auto
+                                .col-sm-12
+                                    .responsive-table
+                                        .table.table-hover.tbl-odd-light.tbl-none
+                                            .tbl-header
+                                                table
+                                                    thead
+                                                        tr
+                                                            th 
+                                                            th Số phiếu
+                                                            th Ngày Lập
+                                                            th Khách hàng
+                                                            th Lý do xuất
+                                            .tbl-content
+                                                table
+                                                    tbody
+                                                        tr
+                                                            td
+                                                                .btn-control.row
+                                                                    button.col-6
+                                                                        i.fas.fa-edit
+                                                                    button.col-6
+                                                                        i.fas.fa-trash-alt
+                                                            td TCX47243
+                                                            td 13/02/19
+                                                            td Khách hàng A
+                                                            td xuất trả hàng không đạt
+                                                        tr
+                                                            td
+                                                                .btn-control.row
+                                                                    button.col-6
+                                                                        i.fas.fa-edit
+                                                                    button.col-6
+                                                                        i.fas.fa-trash-alt
+
+                                                            td 
+                                                            td 
+                                                            td 
+                                                            td
+                                                        tr
+                                                            td
+                                                                .btn-control.row
+                                                                    button.col-6
+                                                                        i.fas.fa-edit
+                                                                    button.col-6
+                                                                        i.fas.fa-trash-alt
+                                                            td
+                                                            td 
+                                                            td 
+                                                            td 
+                            .row
+                                .col-sm-12
+                                    .box-pagination
+                                        .pagination-table
+                                            a(href="#") Xem chi tiết
+                .col-lg-6
+                    .panel.panel-default(style='margin-bottom:15px;')
+                        .panel-heading
+                            h2.panel-title.text-center.float-none.fz-20
+                                |  Phiếu kiểm hóa chờ xử lý
+                        .panel-body
+                            .row.overflow-auto
+                                .col-sm-12
+                                    .responsive-table
+                                        .table.table-hover.tbl-odd-light.tbl-none
+                                            .tbl-header
+                                                table
+                                                    thead
+                                                        tr
+                                                            th 
+                                                            th Số phiếu
+                                                            th Ngày Lập
+                                                            th Khách hàng
+                                                            th Mã kho
+                                            .tbl-content
+                                                table
+                                                    tbody
+                                                        tr
+                                                            td
+                                                                .btn-control.row
+                                                                    button.col-6
+                                                                        i.fas.fa-edit
+                                                                    button.col-6
+                                                                        i.fas.fa-trash-alt
+                                                            td TCX47243
+                                                            td 13/02/19
+                                                            td Khách hàng A
+                                                            td K10
+                                                        tr
+                                                            td
+                                                                .btn-control.row
+                                                                    button.col-6
+                                                                        i.fas.fa-edit
+                                                                    button.col-6
+                                                                        i.fas.fa-trash-alt
+
+                                                            td 
+                                                            td 
+                                                            td 
+                                                            td
+                                                        tr
+                                                            td
+                                                                .btn-control.row
+                                                                    button.col-6
+                                                                        i.fas.fa-edit
+                                                                    button.col-6
+                                                                        i.fas.fa-trash-alt
+                                                            td
+                                                            td 
+                                                            td 
+                                                            td 
+                            .row
+                                .col-sm-12
+                                    .box-pagination
+                                        .pagination-table
+                                            a(href="#") Xem chi tiết
+                                                

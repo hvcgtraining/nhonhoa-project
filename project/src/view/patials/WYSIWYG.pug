@@ -1,0 +1,466 @@
+<!-- WYSIWYG editor -->
+form.block(action='#', role='form')
+    h6
+        i.icon-pencil
+        |  WYSIWYG editor
+    .block-inner
+        ul.wysihtml5-toolbar(style='')
+            li.dropdown
+                a.btn.btn-default.dropdown-toggle(data-toggle='dropdown', href='#')
+                    i.icon-font
+                    span.current-font Normal text
+                    b.caret
+                ul.dropdown-menu
+                    li
+                        a(data-wysihtml5-command='formatBlock', data-wysihtml5-command-value='div', tabindex='-1', href='javascript:;', unselectable='on') Normal text
+                    li
+                        a(data-wysihtml5-command='formatBlock', data-wysihtml5-command-value='h1', tabindex='-1', href='javascript:;', unselectable='on') Heading 1
+                    li
+                        a(data-wysihtml5-command='formatBlock', data-wysihtml5-command-value='h2', tabindex='-1', href='javascript:;', unselectable='on') Heading 2
+                    li
+                        a(data-wysihtml5-command='formatBlock', data-wysihtml5-command-value='h3', tabindex='-1', href='javascript:;', unselectable='on') Heading 3
+                    li
+                        a(data-wysihtml5-command='formatBlock', data-wysihtml5-command-value='h4', href='javascript:;', unselectable='on') Heading 4
+                    li
+                        a(data-wysihtml5-command='formatBlock', data-wysihtml5-command-value='h5', href='javascript:;', unselectable='on') Heading 5
+                    li
+                        a(data-wysihtml5-command='formatBlock', data-wysihtml5-command-value='h6', href='javascript:;', unselectable='on') Heading 6
+            li.dropdown
+                a.btn.btn-default.dropdown-toggle(data-toggle='dropdown', href='#', tabindex='-1')
+                    i.icon-droplet
+                    span.current-color Black
+                    b.caret
+                ul.dropdown-menu.color-select
+                    li
+                        .wysihtml5-colors(data-wysihtml5-command-value='black')
+                        a.wysihtml5-colors-title(data-wysihtml5-command='foreColor', data-wysihtml5-command-value='black', href='javascript:;', unselectable='on') Black
+                    li
+                        .wysihtml5-colors(data-wysihtml5-command-value='silver')
+                        a.wysihtml5-colors-title(data-wysihtml5-command='foreColor', data-wysihtml5-command-value='silver', href='javascript:;', unselectable='on') Silver
+                    li
+                        .wysihtml5-colors(data-wysihtml5-command-value='gray')
+                        a.wysihtml5-colors-title(data-wysihtml5-command='foreColor', data-wysihtml5-command-value='gray', href='javascript:;', unselectable='on') Grey
+                    li
+                        .wysihtml5-colors(data-wysihtml5-command-value='maroon')
+                        a.wysihtml5-colors-title(data-wysihtml5-command='foreColor', data-wysihtml5-command-value='maroon', href='javascript:;', unselectable='on') Maroon
+                    li
+                        .wysihtml5-colors(data-wysihtml5-command-value='red')
+                        a.wysihtml5-colors-title(data-wysihtml5-command='foreColor', data-wysihtml5-command-value='red', href='javascript:;', unselectable='on') Red
+                    li
+                        .wysihtml5-colors(data-wysihtml5-command-value='purple')
+                        a.wysihtml5-colors-title(data-wysihtml5-command='foreColor', data-wysihtml5-command-value='purple', href='javascript:;', unselectable='on') Purple
+                    li
+                        .wysihtml5-colors(data-wysihtml5-command-value='green')
+                        a.wysihtml5-colors-title(data-wysihtml5-command='foreColor', data-wysihtml5-command-value='green', href='javascript:;', unselectable='on') Green
+                    li
+                        .wysihtml5-colors(data-wysihtml5-command-value='olive')
+                        a.wysihtml5-colors-title(data-wysihtml5-command='foreColor', data-wysihtml5-command-value='olive', href='javascript:;', unselectable='on') Olive
+                    li
+                        .wysihtml5-colors(data-wysihtml5-command-value='navy')
+                        a.wysihtml5-colors-title(data-wysihtml5-command='foreColor', data-wysihtml5-command-value='navy', href='javascript:;', unselectable='on') Navy
+                    li
+                        .wysihtml5-colors(data-wysihtml5-command-value='blue')
+                        a.wysihtml5-colors-title(data-wysihtml5-command='foreColor', data-wysihtml5-command-value='blue', href='javascript:;', unselectable='on') Blue
+                    li
+                        .wysihtml5-colors(data-wysihtml5-command-value='orange')
+                        a.wysihtml5-colors-title(data-wysihtml5-command='foreColor', data-wysihtml5-command-value='orange', href='javascript:;', unselectable='on') Orange
+            li
+                .btn-group
+                    a.btn.btn-default.btn-icon(data-wysihtml5-command='bold', title='Bold', tabindex='-1', href='javascript:;', unselectable='on')
+                        i.icon-bold
+                    a.btn.btn-default.btn-icon(data-wysihtml5-command='italic', title='Italic', tabindex='-1', href='javascript:;', unselectable='on')
+                        i.icon-italic
+                    a.btn.btn-default.btn-icon(data-wysihtml5-command='underline', title='Underline', tabindex='-1', href='javascript:;', unselectable='on')
+                        i.icon-underline
+                    a.btn.btn-default.btn-icon(data-wysihtml5-command='strikeThrough', title='Strike through', tabindex='-1', href='javascript:;', unselectable='on')
+                        i.icon-strikethrough
+            li
+                .btn-group
+                    a.btn.btn-default.btn-icon(data-wysihtml5-command='justifyleft', title='Align left', tabindex='-1', href='javascript:;', unselectable='on')
+                        i.icon-paragraph-left2
+                    a.btn.btn-default.btn-icon(data-wysihtml5-command='justifyright', title='Align right', tabindex='-1', href='javascript:;', unselectable='on')
+                        i.icon-paragraph-right2
+                    a.btn.btn-default.btn-icon(data-wysihtml5-command='justifycenter', title='Align center', tabindex='-1', href='javascript:;', unselectable='on')
+                        i.icon-paragraph-center2
+                    a.btn.btn-default.btn-icon(data-wysihtml5-command='justifyfull', title='Justify', tabindex='-1', href='javascript:;', unselectable='on')
+                        i.icon-paragraph-justify2
+            li
+                .btn-group
+                    a.btn.btn-default.btn-icon(data-wysihtml5-command='insertUnorderedList', title='Unordered list', tabindex='-1', href='javascript:;', unselectable='on')
+                        i.icon-list
+                    a.btn.btn-default.btn-icon(data-wysihtml5-command='insertOrderedList', title='Ordered list', tabindex='-1', href='javascript:;', unselectable='on')
+                        i.icon-numbered-list
+                    a.btn.btn-default.btn-icon(data-wysihtml5-command='Outdent', title='Outdent', tabindex='-1', href='javascript:;', unselectable='on')
+                        i.icon-indent-decrease
+                    a.btn.btn-default.btn-icon(data-wysihtml5-command='Indent', title='Indent', tabindex='-1', href='javascript:;', unselectable='on')
+                        i.icon-indent-increase
+            li
+                .bootstrap-wysihtml5-insert-link-modal.modal.fade
+                    .modal-dialog
+                        .modal-content
+                            .modal-header
+                                a.close(data-dismiss='modal') ×
+                                h4.modal-title
+                                    i.icon-link
+                                    | Insert link
+                            .modal-body.with-padding
+                                .form-group
+                                    input.bootstrap-wysihtml5-insert-link-url.form-control(type='text', value='http://')
+                                    label.checkbox
+                                        .checker
+                                            span.checked
+                                                input.bootstrap-wysihtml5-insert-link-target.styled(type='checkbox', checked='')
+                                        | Open link in new window
+                            .modal-footer
+                                a.btn.btn-warning(href='#', data-dismiss='modal') Cancel
+                                a.btn.btn-primary(href='#', data-dismiss='modal') Insert link
+                a.btn.btn-default.btn-icon(data-wysihtml5-command='createLink', title='Insert link', tabindex='-1', href='javascript:;', unselectable='on')
+                    i.icon-link
+            li
+                .bootstrap-wysihtml5-insert-image-modal.modal.fade
+                    .modal-dialog
+                        .modal-content
+                            .modal-header
+                                a.close(data-dismiss='modal') ×
+                                h4.modal-title
+                                    i.icon-image2
+                                    | Insert image
+                            .modal-body.with-padding
+                                .form-group
+                                    input.bootstrap-wysihtml5-insert-image-url.form-control(type='text', value='http://')
+                            .modal-footer
+                                a.btn.btn-warning(href='#', data-dismiss='modal') Cancel
+                                a.btn.btn-primary(href='#', data-dismiss='modal') Insert image
+                a.btn.btn-default.btn-icon(data-wysihtml5-command='insertImage', title='Insert image', tabindex='-1', href='javascript:;', unselectable='on')
+                    i.icon-image2
+            li
+                .btn-group
+                    a.btn.btn-default.btn-icon(data-wysihtml5-command='undo', title='Undo', tabindex='-1', href='javascript:;', unselectable='on')
+                        i.icon-undo
+                    a.btn.btn-default.btn-icon(data-wysihtml5-command='redo', title='Redo', tabindex='-1', href='javascript:;', unselectable='on')
+                        i.icon-redo
+            li
+                .btn-group
+                    a.btn.btn-success.btn-icon(data-wysihtml5-action='change_view', title='Edit HTML', tabindex='-1', href='javascript:;', unselectable='on')
+                        i.icon-code
+        textarea.editor(placeholder='Enter text ...', style='display: none;')
+        input(type='hidden', name='_wysihtml5_mode', value='1')
+        iframe.wysihtml5-sandbox(security='restricted', allowtransparency='true', frameborder='0', width='0', height='0', marginwidth='0', marginheight='0', style='background-color: rgb(255, 255, 255); border-collapse: separate; border-color: rgb(221, 221, 221); border-style: solid; border-width: 1px; clear: none; display: inline-block; float: none; margin: 0px; outline: rgb(51, 51, 51) none 0px; outline-offset: 0px; padding: 10px; position: static; z-index: auto; vertical-align: baseline; text-align: start; box-sizing: border-box; box-shadow: none; border-radius: 2px; width: 1059px; height: 150px; top: auto; left: auto; right: auto; bottom: auto;')
+    .text-right
+        button.btn.btn-danger.mg-r2(type='submit') Cancel
+        button.btn.btn-primary(type='submit') Submit
+
+<!-- WYSIWYG editor inside panel -->
+.panel.panel-default
+    .panel-heading
+        h6.panel-title
+            i.icon-pencil
+            |  Editor inside panel
+    .panel-body
+        form(action='#', role='form')
+            .block-inner
+                ul.wysihtml5-toolbar(style='')
+                    li.dropdown
+                        a.btn.btn-default.dropdown-toggle(data-toggle='dropdown', href='#')
+                            i.icon-font
+                            span.current-font Normal text
+                            b.caret
+                        ul.dropdown-menu
+                            li
+                                a(data-wysihtml5-command='formatBlock', data-wysihtml5-command-value='div', tabindex='-1', href='javascript:;', unselectable='on') Normal text
+                            li
+                                a(data-wysihtml5-command='formatBlock', data-wysihtml5-command-value='h1', tabindex='-1', href='javascript:;', unselectable='on') Heading 1
+                            li
+                                a(data-wysihtml5-command='formatBlock', data-wysihtml5-command-value='h2', tabindex='-1', href='javascript:;', unselectable='on') Heading 2
+                            li
+                                a(data-wysihtml5-command='formatBlock', data-wysihtml5-command-value='h3', tabindex='-1', href='javascript:;', unselectable='on') Heading 3
+                            li
+                                a(data-wysihtml5-command='formatBlock', data-wysihtml5-command-value='h4', href='javascript:;', unselectable='on') Heading 4
+                            li
+                                a(data-wysihtml5-command='formatBlock', data-wysihtml5-command-value='h5', href='javascript:;', unselectable='on') Heading 5
+                            li
+                                a(data-wysihtml5-command='formatBlock', data-wysihtml5-command-value='h6', href='javascript:;', unselectable='on') Heading 6
+                    li.dropdown
+                        a.btn.btn-default.dropdown-toggle(data-toggle='dropdown', href='#', tabindex='-1')
+                            i.icon-droplet
+                            span.current-color Black
+                            b.caret
+                        ul.dropdown-menu.color-select
+                            li
+                                .wysihtml5-colors(data-wysihtml5-command-value='black')
+                                a.wysihtml5-colors-title(data-wysihtml5-command='foreColor', data-wysihtml5-command-value='black', href='javascript:;', unselectable='on') Black
+                            li
+                                .wysihtml5-colors(data-wysihtml5-command-value='silver')
+                                a.wysihtml5-colors-title(data-wysihtml5-command='foreColor', data-wysihtml5-command-value='silver', href='javascript:;', unselectable='on') Silver
+                            li
+                                .wysihtml5-colors(data-wysihtml5-command-value='gray')
+                                a.wysihtml5-colors-title(data-wysihtml5-command='foreColor', data-wysihtml5-command-value='gray', href='javascript:;', unselectable='on') Grey
+                            li
+                                .wysihtml5-colors(data-wysihtml5-command-value='maroon')
+                                a.wysihtml5-colors-title(data-wysihtml5-command='foreColor', data-wysihtml5-command-value='maroon', href='javascript:;', unselectable='on') Maroon
+                            li
+                                .wysihtml5-colors(data-wysihtml5-command-value='red')
+                                a.wysihtml5-colors-title(data-wysihtml5-command='foreColor', data-wysihtml5-command-value='red', href='javascript:;', unselectable='on') Red
+                            li
+                                .wysihtml5-colors(data-wysihtml5-command-value='purple')
+                                a.wysihtml5-colors-title(data-wysihtml5-command='foreColor', data-wysihtml5-command-value='purple', href='javascript:;', unselectable='on') Purple
+                            li
+                                .wysihtml5-colors(data-wysihtml5-command-value='green')
+                                a.wysihtml5-colors-title(data-wysihtml5-command='foreColor', data-wysihtml5-command-value='green', href='javascript:;', unselectable='on') Green
+                            li
+                                .wysihtml5-colors(data-wysihtml5-command-value='olive')
+                                a.wysihtml5-colors-title(data-wysihtml5-command='foreColor', data-wysihtml5-command-value='olive', href='javascript:;', unselectable='on') Olive
+                            li
+                                .wysihtml5-colors(data-wysihtml5-command-value='navy')
+                                a.wysihtml5-colors-title(data-wysihtml5-command='foreColor', data-wysihtml5-command-value='navy', href='javascript:;', unselectable='on') Navy
+                            li
+                                .wysihtml5-colors(data-wysihtml5-command-value='blue')
+                                a.wysihtml5-colors-title(data-wysihtml5-command='foreColor', data-wysihtml5-command-value='blue', href='javascript:;', unselectable='on') Blue
+                            li
+                                .wysihtml5-colors(data-wysihtml5-command-value='orange')
+                                a.wysihtml5-colors-title(data-wysihtml5-command='foreColor', data-wysihtml5-command-value='orange', href='javascript:;', unselectable='on') Orange
+                    li
+                        .btn-group
+                            a.btn.btn-default.btn-icon(data-wysihtml5-command='bold', title='Bold', tabindex='-1', href='javascript:;', unselectable='on')
+                                i.icon-bold
+                            a.btn.btn-default.btn-icon(data-wysihtml5-command='italic', title='Italic', tabindex='-1', href='javascript:;', unselectable='on')
+                                i.icon-italic
+                            a.btn.btn-default.btn-icon(data-wysihtml5-command='underline', title='Underline', tabindex='-1', href='javascript:;', unselectable='on')
+                                i.icon-underline
+                            a.btn.btn-default.btn-icon(data-wysihtml5-command='strikeThrough', title='Strike through', tabindex='-1', href='javascript:;', unselectable='on')
+                                i.icon-strikethrough
+                    li
+                        .btn-group
+                            a.btn.btn-default.btn-icon(data-wysihtml5-command='justifyleft', title='Align left', tabindex='-1', href='javascript:;', unselectable='on')
+                                i.icon-paragraph-left2
+                            a.btn.btn-default.btn-icon(data-wysihtml5-command='justifyright', title='Align right', tabindex='-1', href='javascript:;', unselectable='on')
+                                i.icon-paragraph-right2
+                            a.btn.btn-default.btn-icon(data-wysihtml5-command='justifycenter', title='Align center', tabindex='-1', href='javascript:;', unselectable='on')
+                                i.icon-paragraph-center2
+                            a.btn.btn-default.btn-icon(data-wysihtml5-command='justifyfull', title='Justify', tabindex='-1', href='javascript:;', unselectable='on')
+                                i.icon-paragraph-justify2
+                    li
+                        .btn-group
+                            a.btn.btn-default.btn-icon(data-wysihtml5-command='insertUnorderedList', title='Unordered list', tabindex='-1', href='javascript:;', unselectable='on')
+                                i.icon-list
+                            a.btn.btn-default.btn-icon(data-wysihtml5-command='insertOrderedList', title='Ordered list', tabindex='-1', href='javascript:;', unselectable='on')
+                                i.icon-numbered-list
+                            a.btn.btn-default.btn-icon(data-wysihtml5-command='Outdent', title='Outdent', tabindex='-1', href='javascript:;', unselectable='on')
+                                i.icon-indent-decrease
+                            a.btn.btn-default.btn-icon(data-wysihtml5-command='Indent', title='Indent', tabindex='-1', href='javascript:;', unselectable='on')
+                                i.icon-indent-increase
+                    li
+                        .bootstrap-wysihtml5-insert-link-modal.modal.fade
+                            .modal-dialog
+                                .modal-content
+                                    .modal-header
+                                        a.close(data-dismiss='modal') ×
+                                        h4.modal-title
+                                            i.icon-link
+                                            | Insert link
+                                    .modal-body.with-padding
+                                        .form-group
+                                            input.bootstrap-wysihtml5-insert-link-url.form-control(type='text', value='http://')
+                                            label.checkbox
+                                                .checker
+                                                    span.checked
+                                                        input.bootstrap-wysihtml5-insert-link-target.styled(type='checkbox', checked='')
+                                                | Open link in new window
+                                    .modal-footer
+                                        a.btn.btn-warning(href='#', data-dismiss='modal') Cancel
+                                        a.btn.btn-primary(href='#', data-dismiss='modal') Insert link
+                        a.btn.btn-default.btn-icon(data-wysihtml5-command='createLink', title='Insert link', tabindex='-1', href='javascript:;', unselectable='on')
+                            i.icon-link
+                    li
+                        .bootstrap-wysihtml5-insert-image-modal.modal.fade
+                            .modal-dialog
+                                .modal-content
+                                    .modal-header
+                                        a.close(data-dismiss='modal') ×
+                                        h4.modal-title
+                                            i.icon-image2
+                                            | Insert image
+                                    .modal-body.with-padding
+                                        .form-group
+                                            input.bootstrap-wysihtml5-insert-image-url.form-control(type='text', value='http://')
+                                    .modal-footer
+                                        a.btn.btn-warning(href='#', data-dismiss='modal') Cancel
+                                        a.btn.btn-primary(href='#', data-dismiss='modal') Insert image
+                        a.btn.btn-default.btn-icon(data-wysihtml5-command='insertImage', title='Insert image', tabindex='-1', href='javascript:;', unselectable='on')
+                            i.icon-image2
+                    li
+                        .btn-group
+                            a.btn.btn-default.btn-icon(data-wysihtml5-command='undo', title='Undo', tabindex='-1', href='javascript:;', unselectable='on')
+                                i.icon-undo
+                            a.btn.btn-default.btn-icon(data-wysihtml5-command='redo', title='Redo', tabindex='-1', href='javascript:;', unselectable='on')
+                                i.icon-redo
+                    li
+                        .btn-group
+                            a.btn.btn-success.btn-icon(data-wysihtml5-action='change_view', title='Edit HTML', tabindex='-1', href='javascript:;', unselectable='on')
+                                i.icon-code
+                textarea.editor(placeholder='Enter text ...', style='display: none;')
+                input(type='hidden', name='_wysihtml5_mode', value='1')
+                iframe.wysihtml5-sandbox(security='restricted', allowtransparency='true', frameborder='0', width='0', height='0', marginwidth='0', marginheight='0', style='background-color: rgb(255, 255, 255); border-collapse: separate; border-color: rgb(221, 221, 221); border-style: solid; border-width: 1px; clear: none; display: inline-block; float: none; margin: 0px; outline: rgb(51, 51, 51) none 0px; outline-offset: 0px; padding: 10px; position: static; z-index: auto; vertical-align: baseline; text-align: start; box-sizing: border-box; box-shadow: none; border-radius: 2px; width: 1027px; height: 150px; top: auto; left: auto; right: auto; bottom: auto;')
+            .form-actions.text-right
+                button.btn.btn-danger.mg-r2(type='submit') Cancel
+                button.btn.btn-primary(type='submit') Submit
+
+<!-- WYSIWYG editor inside modal -->
+.block
+    a.btn.btn-danger.btn-block(data-toggle='modal', role='button', href='wysiwyg.html#editor-modal') Run modal with WYSIWYG editor
+    // Modal with WYSIWYG editor
+    #editor-modal.modal.fade(tabindex='-1', role='dialog', aria-hidden='true', style='display: none;')
+        .modal-dialog
+            .modal-content
+                .modal-header
+                    button.close(type='button', data-dismiss='modal', aria-hidden='true') ×
+                    h4.modal-title
+                        i.icon-quill2
+                        |  WYSIWYG editor inside modal
+                .modal-body.with-padding
+                    ul.wysihtml5-toolbar(style='')
+                        li.dropdown
+                            a.btn.btn-default.dropdown-toggle(data-toggle='dropdown', href='#')
+                                i.icon-font
+                                span.current-font Normal text
+                                b.caret
+                            ul.dropdown-menu
+                                li
+                                    a(data-wysihtml5-command='formatBlock', data-wysihtml5-command-value='div', tabindex='-1', href='javascript:;', unselectable='on') Normal text
+                                li
+                                    a(data-wysihtml5-command='formatBlock', data-wysihtml5-command-value='h1', tabindex='-1', href='javascript:;', unselectable='on') Heading 1
+                                li
+                                    a(data-wysihtml5-command='formatBlock', data-wysihtml5-command-value='h2', tabindex='-1', href='javascript:;', unselectable='on') Heading 2
+                                li
+                                    a(data-wysihtml5-command='formatBlock', data-wysihtml5-command-value='h3', tabindex='-1', href='javascript:;', unselectable='on') Heading 3
+                                li
+                                    a(data-wysihtml5-command='formatBlock', data-wysihtml5-command-value='h4', href='javascript:;', unselectable='on') Heading 4
+                                li
+                                    a(data-wysihtml5-command='formatBlock', data-wysihtml5-command-value='h5', href='javascript:;', unselectable='on') Heading 5
+                                li
+                                    a(data-wysihtml5-command='formatBlock', data-wysihtml5-command-value='h6', href='javascript:;', unselectable='on') Heading 6
+                        li.dropdown
+                            a.btn.btn-default.dropdown-toggle(data-toggle='dropdown', href='#', tabindex='-1')
+                                i.icon-droplet
+                                span.current-color Black
+                                b.caret
+                            ul.dropdown-menu.color-select
+                                li
+                                    .wysihtml5-colors(data-wysihtml5-command-value='black')
+                                    a.wysihtml5-colors-title(data-wysihtml5-command='foreColor', data-wysihtml5-command-value='black', href='javascript:;', unselectable='on') Black
+                                li
+                                    .wysihtml5-colors(data-wysihtml5-command-value='silver')
+                                    a.wysihtml5-colors-title(data-wysihtml5-command='foreColor', data-wysihtml5-command-value='silver', href='javascript:;', unselectable='on') Silver
+                                li
+                                    .wysihtml5-colors(data-wysihtml5-command-value='gray')
+                                    a.wysihtml5-colors-title(data-wysihtml5-command='foreColor', data-wysihtml5-command-value='gray', href='javascript:;', unselectable='on') Grey
+                                li
+                                    .wysihtml5-colors(data-wysihtml5-command-value='maroon')
+                                    a.wysihtml5-colors-title(data-wysihtml5-command='foreColor', data-wysihtml5-command-value='maroon', href='javascript:;', unselectable='on') Maroon
+                                li
+                                    .wysihtml5-colors(data-wysihtml5-command-value='red')
+                                    a.wysihtml5-colors-title(data-wysihtml5-command='foreColor', data-wysihtml5-command-value='red', href='javascript:;', unselectable='on') Red
+                                li
+                                    .wysihtml5-colors(data-wysihtml5-command-value='purple')
+                                    a.wysihtml5-colors-title(data-wysihtml5-command='foreColor', data-wysihtml5-command-value='purple', href='javascript:;', unselectable='on') Purple
+                                li
+                                    .wysihtml5-colors(data-wysihtml5-command-value='green')
+                                    a.wysihtml5-colors-title(data-wysihtml5-command='foreColor', data-wysihtml5-command-value='green', href='javascript:;', unselectable='on') Green
+                                li
+                                    .wysihtml5-colors(data-wysihtml5-command-value='olive')
+                                    a.wysihtml5-colors-title(data-wysihtml5-command='foreColor', data-wysihtml5-command-value='olive', href='javascript:;', unselectable='on') Olive
+                                li
+                                    .wysihtml5-colors(data-wysihtml5-command-value='navy')
+                                    a.wysihtml5-colors-title(data-wysihtml5-command='foreColor', data-wysihtml5-command-value='navy', href='javascript:;', unselectable='on') Navy
+                                li
+                                    .wysihtml5-colors(data-wysihtml5-command-value='blue')
+                                    a.wysihtml5-colors-title(data-wysihtml5-command='foreColor', data-wysihtml5-command-value='blue', href='javascript:;', unselectable='on') Blue
+                                li
+                                    .wysihtml5-colors(data-wysihtml5-command-value='orange')
+                                    a.wysihtml5-colors-title(data-wysihtml5-command='foreColor', data-wysihtml5-command-value='orange', href='javascript:;', unselectable='on') Orange
+                        li
+                            .btn-group
+                                a.btn.btn-default.btn-icon(data-wysihtml5-command='bold', title='Bold', tabindex='-1', href='javascript:;', unselectable='on')
+                                    i.icon-bold
+                                a.btn.btn-default.btn-icon(data-wysihtml5-command='italic', title='Italic', tabindex='-1', href='javascript:;', unselectable='on')
+                                    i.icon-italic
+                                a.btn.btn-default.btn-icon(data-wysihtml5-command='underline', title='Underline', tabindex='-1', href='javascript:;', unselectable='on')
+                                    i.icon-underline
+                                a.btn.btn-default.btn-icon(data-wysihtml5-command='strikeThrough', title='Strike through', tabindex='-1', href='javascript:;', unselectable='on')
+                                    i.icon-strikethrough
+                        li
+                            .btn-group
+                                a.btn.btn-default.btn-icon(data-wysihtml5-command='justifyleft', title='Align left', tabindex='-1', href='javascript:;', unselectable='on')
+                                    i.icon-paragraph-left2
+                                a.btn.btn-default.btn-icon(data-wysihtml5-command='justifyright', title='Align right', tabindex='-1', href='javascript:;', unselectable='on')
+                                    i.icon-paragraph-right2
+                                a.btn.btn-default.btn-icon(data-wysihtml5-command='justifycenter', title='Align center', tabindex='-1', href='javascript:;', unselectable='on')
+                                    i.icon-paragraph-center2
+                                a.btn.btn-default.btn-icon(data-wysihtml5-command='justifyfull', title='Justify', tabindex='-1', href='javascript:;', unselectable='on')
+                                    i.icon-paragraph-justify2
+                        li
+                            .btn-group
+                                a.btn.btn-default.btn-icon(data-wysihtml5-command='insertUnorderedList', title='Unordered list', tabindex='-1', href='javascript:;', unselectable='on')
+                                    i.icon-list
+                                a.btn.btn-default.btn-icon(data-wysihtml5-command='insertOrderedList', title='Ordered list', tabindex='-1', href='javascript:;', unselectable='on')
+                                    i.icon-numbered-list
+                                a.btn.btn-default.btn-icon(data-wysihtml5-command='Outdent', title='Outdent', tabindex='-1', href='javascript:;', unselectable='on')
+                                    i.icon-indent-decrease
+                                a.btn.btn-default.btn-icon(data-wysihtml5-command='Indent', title='Indent', tabindex='-1', href='javascript:;', unselectable='on')
+                                    i.icon-indent-increase
+                        li
+                            .bootstrap-wysihtml5-insert-link-modal.modal.fade
+                                .modal-dialog
+                                    .modal-content
+                                        .modal-header
+                                            a.close(data-dismiss='modal') ×
+                                            h4.modal-title
+                                                i.icon-link
+                                                | Insert link
+                                        .modal-body.with-padding
+                                            .form-group
+                                                input.bootstrap-wysihtml5-insert-link-url.form-control(type='text', value='http://')
+                                                label.checkbox
+                                                    .checker
+                                                        span.checked
+                                                            input.bootstrap-wysihtml5-insert-link-target.styled(type='checkbox', checked='')
+                                                    | Open link in new window
+                                        .modal-footer
+                                            a.btn.btn-warning(href='#', data-dismiss='modal') Cancel
+                                            a.btn.btn-primary(href='#', data-dismiss='modal') Insert link
+                            a.btn.btn-default.btn-icon(data-wysihtml5-command='createLink', title='Insert link', tabindex='-1', href='javascript:;', unselectable='on')
+                                i.icon-link
+                        li
+                            .bootstrap-wysihtml5-insert-image-modal.modal.fade
+                                .modal-dialog
+                                    .modal-content
+                                        .modal-header
+                                            a.close(data-dismiss='modal') ×
+                                            h4.modal-title
+                                                i.icon-image2
+                                                | Insert image
+                                        .modal-body.with-padding
+                                            .form-group
+                                                input.bootstrap-wysihtml5-insert-image-url.form-control(type='text', value='http://')
+                                        .modal-footer
+                                            a.btn.btn-warning(href='#', data-dismiss='modal') Cancel
+                                            a.btn.btn-primary(href='#', data-dismiss='modal') Insert image
+                            a.btn.btn-default.btn-icon(data-wysihtml5-command='insertImage', title='Insert image', tabindex='-1', href='javascript:;', unselectable='on')
+                                i.icon-image2
+                        li
+                            .btn-group
+                                a.btn.btn-default.btn-icon(data-wysihtml5-command='undo', title='Undo', tabindex='-1', href='javascript:;', unselectable='on')
+                                    i.icon-undo
+                                a.btn.btn-default.btn-icon(data-wysihtml5-command='redo', title='Redo', tabindex='-1', href='javascript:;', unselectable='on')
+                                    i.icon-redo
+                        li
+                            .btn-group
+                                a.btn.btn-success.btn-icon(data-wysihtml5-action='change_view', title='Edit HTML', tabindex='-1', href='javascript:;', unselectable='on')
+                                    i.icon-code
+                    textarea.editor.form-control(placeholder='Enter text ...', style='display: none;')
+                    input(type='hidden', name='_wysihtml5_mode', value='1')
+                    iframe.wysihtml5-sandbox(security='restricted', allowtransparency='true', frameborder='0', width='0', height='0', marginwidth='0', marginheight='0', style='background-color: rgb(255, 255, 255); border-collapse: separate; border-color: rgb(221, 221, 221); border-style: solid; border-width: 1px; clear: none; display: block; float: none; margin: 0px; outline: rgb(85, 85, 85) none 0px; outline-offset: 0px; padding: 10px; position: static; z-index: auto; vertical-align: baseline; text-align: start; box-sizing: border-box; box-shadow: none; border-radius: 2px; width: 100%; height: auto; top: auto; left: auto; right: auto; bottom: auto;')
+                .modal-footer
+                    button.btn.btn-warning(data-dismiss='modal') Close
+                    button.btn.btn-primary Save
+    // /modal with WYSIWYG editor

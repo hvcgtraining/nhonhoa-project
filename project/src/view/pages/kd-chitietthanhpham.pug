@@ -1,0 +1,36 @@
+extends ../layouts/layout.pug
+block main-content
+    .page-container
+        include ../patials/sidebar.pug
+        .page-content
+            h1.text-center Chi tiết thành phẩm
+            .row
+                .col-sm-12
+                    .panel.panel-default
+                        .panel-heading
+                            h6.panel-title
+                                i.icon-grid
+                                | Thông tin thành phẩm
+                        .panel-body
+                            .form-group.col-sm-12
+                                .form-group.col-sm-4.mg-t1.mg-b1
+                                    label.control-label Mã sản phẩm
+                                    select.form-control(name='select')
+                                        option(value="") W1AN00-012
+                                        option(value="") W1AN00-012
+                                        option(value="") W1AN00-012
+                                .col-sm-4.control-label.mg-t3.mg-b1.form-group
+                                    p.mg-t3 Cân 5kg (DInox phăng)
+                                .form-group.col-sm-4.mg-t1.mg-b1
+                                    label.control-label Nhóm                                
+                                    select.form-control(name='select')
+                                        option(value="") WA01
+                                        option(value="") WA02 
+                                        option(value="") WA03S
+                            .col-sm-12
+                                .form-actions.text-right.mg-t2.col-sm-12.pd-0
+                                    label.control-label 
+                                    button.btn.btn-primary.mg-t3(type='submit') Thêm/Sửa
+                                
+                                
+                                        

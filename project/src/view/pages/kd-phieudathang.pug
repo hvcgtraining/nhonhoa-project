@@ -1,0 +1,216 @@
+extends ../layouts/layout.pug
+block main-content
+    .page-container
+        include ../patials/sidebar.pug
+        .page-content
+            .header(style="position:relative;")
+                h1.text-center Phiếu đặt hàng
+                .form-group.cs-position-1
+                    label.control-label.col-sm-6  Số phiếu yêu cầu 
+                    input.col-sm-6.form-control(type='text', placeholder='16/YC-KH-19')
+            include ../patials/kd-topcontent-phieudathang.pug
+            .mt-2
+                .responsive-table-defaults
+                    table.table-defaults
+                        thead.table-head
+                            tr
+                                th 
+                                th Mã HĐ
+                                th Số HĐ
+                                th Ngày Lập
+                                th Lượng
+                                th Tiền
+                                th Ngày KT
+                                th Mã HĐ
+                                th Số HĐ
+                                th Ngày Lập
+                                th Lượng
+                                th Tiền
+                                th Ngày KT
+                                th Mã HĐ
+                                th Số HĐ
+                                th Ngày Lập
+                                th Lượng
+                                th Tiền
+                                th Ngày KT
+                        tbody.table-body
+                            tr
+                                td
+                                    .btn-control.row
+                                        button.col-6
+                                            i.fas.fa-edit
+                                        button.col-6
+                                            i.fas.fa-trash-alt
+                                td 0123
+                                td 111
+                                td 11/02/19
+                                td 1.11
+                                td 0
+                                td 14/04/19
+                                td 0123
+                                td 111
+                                td 11/02/19
+                                td 1.11
+                                td 0
+                                td 14/04/19
+                                td 0123
+                                td 111
+                                td 11/02/19
+                                td 1.11
+                                td 0
+                                td 14/04/19
+                            tr
+                                td
+                                    .btn-control.row
+                                        button.col-6
+                                            i.fas.fa-edit
+                                        button.col-6
+                                            i.fas.fa-trash-alt
+                                td 0123
+                                td 111
+                                td 11/02/19
+                                td 1.11
+                                td 0
+                                td 14/04/19
+                                td 0123
+                                td 111
+                                td 11/02/19
+                                td 1.11
+                                td 0
+                                td 14/04/19
+                                td 0123
+                                td 111
+                                td 11/02/19
+                                td 1.11
+                                td 0
+                                td 14/04/19
+                            tr
+                                td
+                                    .btn-control.row
+                                        button.col-6
+                                            i.fas.fa-edit
+                                        button.col-6
+                                            i.fas.fa-trash-alt
+                                td 0123
+                                td 111
+                                td 11/02/19
+                                td 1.11
+                                td 0
+                                td 14/04/19
+                                td 0123
+                                td 111
+                                td 11/02/19
+                                td 1.11
+                                td 0
+                                td 14/04/19
+                                td 0123
+                                td 111
+                                td 11/02/19
+                                td 1.11
+                                td 0
+                                td 14/04/19
+                            tr
+                                td
+                                    .btn-control.row
+                                        button.col-6
+                                            i.fas.fa-edit
+                                        button.col-6
+                                            i.fas.fa-trash-alt
+                                td 0123
+                                td 111
+                                td 11/02/19
+                                td 1.11
+                                td 0
+                                td 14/04/19
+                                td 0123
+                                td 111
+                                td 11/02/19
+                                td 1.11
+                                td 0
+                                td 14/04/19
+                                td 0123
+                                td 111
+                                td 11/02/19
+                                td 1.11
+                                td 0
+                                td 14/04/19
+                            tr
+                                td
+                                    .btn-control.row
+                                        button.col-6
+                                            i.fas.fa-edit
+                                        button.col-6
+                                            i.fas.fa-trash-alt
+                                td 0123
+                                td 111
+                                td 11/02/19
+                                td 1.11
+                                td 0
+                                td 14/04/19
+                                td 0123
+                                td 111
+                                td 11/02/19
+                                td 1.11
+                                td 0
+                                td 14/04/19
+                                td 0123
+                                td 111
+                                td 11/02/19
+                                td 1.11
+                                td 0
+                                td 14/04/19
+                            tr
+                                td
+                                    .btn-control.row
+                                        button.col-6
+                                            i.fas.fa-edit
+                                        button.col-6
+                                            i.fas.fa-trash-alt
+                                td 0123
+                                td 111
+                                td 11/02/19
+                                td 1.11
+                                td 0
+                                td 14/04/19
+                                td 0123
+                                td 111
+                                td 11/02/19
+                                td 1.11
+                                td 0
+                                td 14/04/19
+                                td 0123
+                                td 111
+                                td 11/02/19
+                                td 1.11
+                                td 0
+                                td 14/04/19
+                        tfoot.table-foot
+                            tr 
+                                td Tổng
+                                td
+                                td
+                                td
+                                td
+                                td
+                                td
+                                td
+                                td
+                                td
+                                td
+                                td
+                                td
+                                td
+                                td
+                                td
+                                td
+                                td
+                                td
+            .form-group
+                .row
+                    .col-sm-6
+                        include ../patials/kd-form-dieuchinh.pug
+                    .col-sm-6
+                        include ../patials/kd-form-themmoi.pug
+            .form-actions.pd-b2
+                button.btn.btn-primary.float-left(type='submit') Thêm ghi chú chung
+                button.btn.btn-primary.float-right(type='submit') Tạo phiếu đặt hàng

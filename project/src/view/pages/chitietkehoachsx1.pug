@@ -1,0 +1,22 @@
+extends ../layouts/layout.pug
+block main-content
+    .page-container
+        include ../patials/sidebar.pug
+        .page-content.position-re
+            h3.text-center Chi tiết kế hoạch sản xuất
+            include ../patials/form-tab-chitietkhsx.pug
+            .form-group.mg-3.fz-20
+                i.fas.fa-angle-double-down
+            .row
+                .form-group.col-sm-5
+                    .row
+                    .col-sm-12
+                        include ../patials/form-themmoi.pug
+                    .col-sm-12    
+                        include ../patials/form-dieuchinhsoluongthanhpham.pug
+                .form-group.col-sm-7
+                    include ../patials/form-table-chitietkhsx1.pug
+            .form-actions.text-right
+                button.btn.btn-primary.mg-r3(type='submit') Lưu  
+                button.btn.btn-primary(type='submit') Xuất phiếu
+

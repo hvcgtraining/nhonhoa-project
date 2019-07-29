@@ -1,0 +1,351 @@
+.sidebar
+    .sidebar-content
+        // User dropdown
+        .user-menu.dropdown
+            a.dropdown-toggle(href='index.html#', data-toggle='dropdown')
+                img(src='images/demo/users/face3.png', alt='')
+                .user-info Administrator
+                    span Admin
+            .popup.dropdown-menu.dropdown-menu-right
+                .thumbnail
+                    .thumb
+                        img(alt='', src='images/demo/users/face3.png')
+                        .thumb-options
+                            span
+                                a.btn.btn-icon.btn-success(href='index.html#')
+                                    i.icon-pencil
+                                a.btn.btn-icon.btn-success(href='index.html#')
+                                    i.icon-remove
+                    .caption.text-center
+                        h6 Administrator
+                            small Admin
+                ul.list-group
+                    li.list-group-item
+                        i.icon-pencil3.text-muted
+                        |  Thông báo của tôi
+                        span.label.label-success 289
+                    li.list-group-item
+                        i.icon-people.text-muted
+                        |  Nhân viên trực tuyến
+                        span.label.label-danger 892
+                    li.list-group-item
+                        i.icon-stats2.text-muted
+                        |  Báo cáo 
+                        span.label.label-primary 92
+                    li.list-group-item
+                        i.icon-stack.text-muted
+                        |  Doanh số
+                        h5.pull-right.text-danger 450.389.000$
+                        // /user dropdown
+                        // Main navigation
+        ul.navigation
+            li.active
+                a(href='index.html')
+                    span Tổng Quát
+                    i.icon-screen2
+            li
+                a(href='index.html#')
+                    span Phòng kế hoạch
+                    i.icon-stack
+                ul
+                    li
+                        a(href='index.html#') Lập kế hoạch
+                        ul
+                            li
+                                a(href='../pages/kehoachsx-nhapkho-xuathang.html#') Nhập kho - xuất hàng
+                            li
+                                a(href='../pages/danhsachkehoachsx.html#') Kế hoạch sản xuất
+                                //- ../pages/chitietkehoachsx.html
+                            li
+                                a(href='../pages/dskehoachsxxuong.html#') Xưởng lắp ráp
+                                //- ../pages/chitietkehoachsanxuat2.html
+                            li
+                                a(href='../pages/dskehoachsxxuongchitiet.html#') Xưởng chi tiết
+                                //- ../pages/chitietkehoachsx1.html
+                    li
+                        a(href='index.html#') Kiểm hóa
+                        ul    
+                            li
+                                a(href='../pages/dsyeucaumuahang.html#') Cấp hàng
+                            li
+                                a(href='../pages/phieuyeucaumuahang1.html#') Mua hàng
+                                //- ../pages/phieuyeucaumuahang2.html#
+                                //- ../pages/theodoiyeucaumuahang.html
+                    li
+                        a(href='../pages/dsphieukiemhoa.html#') Theo dõi nhập                   
+                        //- ../pages/taomoiphieukiemhoa.html
+                        //- ../pages/phieukiemhoa.html
+                        //- ../pages/kiemhoatole.html
+                        //- ../pages/phieukiemhoa2.html
+                    li
+                        a(href='../pages/dsphieunhapvattu.html#') Điều chuyển vật tư
+                        //- ../pages/taophieunhapvattu.html
+                        //- ../pages/chitietphieunhapvattu.html
+                        
+                    li
+                        a(href='../pages/dskehoachsanxuat.html#') Hợp đồng
+                        //- ../pages/chitietkehoachsanxuat.html                 
+                    li
+                        a(href='../pages/dskehoachnhapkho.html#') Định mức                   
+                        //- ../pages/kehoachnhapkho.html
+                        ul
+                            li 
+                                a(href="../pages/dinhmucvattu.html#") Định mức vật tư sản xuất
+                            li 
+                                a(href="#") Định mức sử dụng vật tư
+                            li 
+                                a(href="#") Định mức cắt tole
+
+                    li
+                        a(href='index.html#') Quản lý kho                
+                    li
+                        a(href='index.html#') Quản lý xưởng                    
+            //-         li
+            //-             a(href='index.html#') Theo dõi xuất hàng
+            //-         li
+            //-             a(href='../pages/quanlysoN.html#') Quản lý số N   
+            //-         li
+            //-             a(href='index.html#') Báo cáo
+            //-             ul    
+            //-                 li
+            //-                     a(href='index.html#') Bảng cân đối
+            //-                 li
+            //-                     a(href='index.html#') Bảng cân đối sử dụng
+            //-                 li
+            //-                     a(href='index.html#') Công nợ với khách hàng
+            //-                 li
+            //-                     a(href='index.html#') Gia công và nhập mua hàng
+            //-                 li
+            //-                     a(href='index.html#') Tổng hợp
+            //-                     ul
+            //-                         li
+            //-                             a(href='index.html#') Tole gia công
+            //-                         li
+            //-                             a(href='index.html#') Quyết toán
+            //-                         li
+            //-                             a(href='index.html#') Quyết toán K14
+            //-                         li
+            //-                             a(href='index.html#') Vật tư theo người nhận
+            //-                         li
+            //-                             a(href='index.html#') Vật tư theo tuần
+            //-                         li
+            //-                             a(href='./demo.html#') Phế liệu
+            //-                 li
+            //-                     a(href='index.html#') Bản kê chi tiết
+            //-         li
+            //-             a(href='index.html#') Báo cáo nhanh
+            //-             ul
+            //-                 li
+            //-                     a(href='index.html#') Tìm số tồn âm
+            //-                 li
+            //-                     a(href='index.html#') Điều chuyển tổ hợp
+            //-                 li
+            //-                     a(href='index.html#') In phiếu xuất
+            //-                 li
+            //-                     a(href='index.html#') Liệt kê điều chuyển tổ hợp
+            //-                 li
+            //-                     a(href='index.html#') Số chi tiết vật tư          
+            //-         li
+            //-             a(href='index.html#') Điều chuyển vật tư (TCV)
+            //-         li
+            //-             a(href='index.html#') Theo dõi nhập (TCN)
+            //-         li
+            //-             a(href='index.html#') Theo dõi xuất (TCX)                  
+            //- li
+            //-     a(href='index.html#')
+            //-         span Phòng kinh doanh
+            //-         i.icon-paragraph-justify2
+            //-     ul
+            //-         li
+            //-             a(href='form_components.html') Danh sách yêu cầu mua hàng
+            //-         li
+            //-             a(href='form_layouts.html') Phiếu đặt hàng ( mua hàng )
+            //-         li
+            //-             a(href='form_grid.html') Danh sách phiếu đặt hàng
+            //-         li
+            //-             a(href='wysiwyg.html') Phiếu trả hàng lại NCC
+            //-         li
+            //-             a(href='validation.html') Theo dõi mua hàng (tách phiếu kiểm hóa)
+            //-         li
+            //-             a(href='file_uploader.html') Đơn giá bán
+            //-         li
+            //-             a(href='form_snippets.html') Hóa đơn bán hàng (bán hàng)
+            //-             ul
+            //-                 li
+            //-                     a(href='index.html#') Hợp đồng
+            //-                 li
+            //-                     a(href='index.html#') Phiếu đặt hàng
+            //-                 li
+            //-                     a(href='index.html#') Phiếu xuất kho
+            //-                 li
+            //-                     a(href='index.html#') Nhà cung cấp
+            //-                 li
+            //-                     a(href='index.html#') Khách hàng
+            //-                 li
+            //-                     a(href='index.html#') Phòng kho
+            //-                 li
+            //-                     a(href='index.html#') Báo cáo thống kê
+            //-                 li
+            //-                     a(href='index.html#') Danh mục hàng mua ngoài
+            //-                 li
+            //-                     a(href='index.html#') Danh mục nhóm thành phẩm
+            //-                 li
+            //-                     a(href='index.html#') Danh mục hàng thành phẩm
+            //-                 li
+            //-                     a(href='index.html#') Danh mục linh kiện
+            //-                 li
+            //-                     a(href='index.html#') Danh mục loại hình kinh doanh
+            li
+                a(href='index.html#')
+                    span Kho
+                    i.icon-grid
+                ul
+                    li
+                        a(href='visuals.html') Danh sách yêu cầu
+                    li
+                        a(href='navs.html') Danh sách nhập kho thành phẩm
+                    li
+                        a(href='panel_options.html') Danh sách yêu cầu xuất hàng bán
+                    li
+                        a(href='navbars.html') Danh sách xác nhận nhập kho
+                    li
+                        a(href='info_blocks.html') Danh sách trả lại nhà cung cấp
+                    //- li
+                    //-     a(href='icons.html')
+                    //-         | Icons 
+                    //-         span.label.label-danger 850+
+                    li
+                        a(href='buttons.html') Theo dõi nhập
+            li
+                a(href='index.html#')
+                    span Xưởng
+                    i.icon-copy
+            //-     ul
+            //-         li
+            //-             a(href='sidebar_wide_left.html') Left wide sidebar
+            //-         li
+            //-             a(href='sidebar_wide_right.html') Right wide sidebar
+            //-         li
+            //-             a(href='sidebar_narrow_left.html') Left narrow sidebar
+            //-         li
+            //-             a(href='sidebar_narrow_right.html') Right narrow sidebar
+            //-         li
+            //-             a(href='sidebar_icons_left.html') Left aligned icons
+            //-         li
+            //-             a(href='layout_boxed.html')
+            //-                 | Boxed layout 
+            //-                 span.label.label-danger New
+            //-         li
+            //-             a(href='layout_fixed_navbar.html') Fixed navbar
+            //-         li
+            //-             a(href='horizontal_navigation.html') Horizontal navigation
+            //-         li
+            //-             a(href='horizontal_sidebar.html') Sidebar & Horizontal navigation
+            //-         li
+            //-             a(href='navigation_disabled_items.html') Disabled navigation items
+            li
+                a(href='index.html#')
+                    span Phòng nhân sự
+                    i.icon-numbered-list
+            //-     ul
+            //-         li
+            //-             a(href='task_grid.html') Task grid
+            //-         li
+            //-             a(href='task_list.html') Task list
+            //-         li
+            //-             a(href='task_detailed.html') Task detailed
+            li
+                a(href='charts.html')
+                    span Phòng kế toán
+                    i.icon-bars
+            li#administrator
+                a(href='#')
+                    span Administrator
+                    i.icon-.fas.fa-users-cog
+            //- li
+            //-     a(href='index.html#')
+            //-         span User
+            //-         i.icon-user
+            //-     ul
+            //-         li
+            //-             a(href='team.html') Team
+            //-         li
+            //-             a(href='contacts.html') Contact list
+            //-         li
+            //-             a(href='profile.html') User profile
+            //- li
+            //-     a(href='index.html#')
+            //-         span Support
+            //-         i.icon-bubble6
+            //-     ul
+            //-         li
+            //-             a(href='faq.html') FAQ's
+            //-         li
+            //-             a(href='chat_tabs.html') Chat with tabs
+            //-         li
+            //-             a(href='chat_contacts.html') Chat with contacts
+            //- li
+            //-     a(href='index.html#')
+            //-         span Tables
+            //-         i.icon-table2
+            //-     ul
+            //-         li
+            //-             a(href='tables_static.html') Static tables
+            //-         li
+            //-             a(href='tables_dynamic.html') Data tables
+            //- li
+            //-     a(href='search.html')
+            //-         span Search page
+            //-         i.icon-search3
+            //- li
+            //-     a(href='index.html#')
+            //-         span Invoice
+            //-         i.icon-coin
+            //-     ul
+            //-         li
+            //-             a(href='invoice.html') Invoice template
+            //-         li
+            //-             a(href='invoice_list.html') Invoice list
+            //- li
+            //-     a(href='index.html#')
+            //-         span Login page
+            //-         i.icon-user-plus
+            //-     ul
+            //-         li
+            //-             a(href='login_simple.html') Simple login form
+            //-         li
+            //-             a(href='login_advanced.html') Login form with user image
+            //- li
+            //-     a(href='index.html#')
+            //-         span Error pages
+            //-         i.icon-warning
+            //-     ul
+            //-         li
+            //-             a(href='403.html') 403 page
+            //-         li
+            //-             a(href='404.html') 404 page
+            //-         li
+            //-             a(href='405.html') 405 page
+            //-         li
+            //-             a(href='500.html') 500 page
+            //-         li
+            //-             a(href='503.html') 503 page
+            //-         li
+            //-             a(href='offline.html') Offline page
+            //-         li
+            //-             a(href='error_sidebar.html') Error page with sidebar
+            //- li
+            //-     a(href='index.html#')
+            //-         span Blank pages
+            //-         i.icon-insert-template
+            //-     ul
+            //-         li
+            //-             a(href='blank_left_sidebar.html') Left sidebar
+            //-         li
+            //-             a(href='blank_right_sidebar.html') Right sidebar
+            //-         li
+            //-             a(href='blank_collapsed_sidebar.html') Collapsed sidebar
+            //-         li
+            //-             a(href='blank_full_width.html') Full width page
+
+            // /main navigation

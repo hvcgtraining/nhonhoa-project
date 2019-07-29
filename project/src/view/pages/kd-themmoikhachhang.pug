@@ -1,0 +1,55 @@
+extends ../layouts/layout.pug
+block main-content
+    .page-container
+        include ../patials/sidebar.pug
+        .page-content
+            h1.text-center Thêm mới khách hàng
+            .panel.panel-default(style='margin-bottom:15px;')
+                .panel-heading
+                .panel-body
+                    row
+                        .col-sm-12
+                            .form-group.col-sm-12.mg-t1.mg-b1
+                                    label.control-label Tên NCC:
+                                    input.form-control(type='text',placeholder="Cty TNHH An Lập")
+                            .form-group.col-sm-12.mg-t1.mg-b1
+                                label.control-label Địa chỉ:
+                                input.form-control(type='text',placeholder="123B Đường 23, Bình Thạnh, TPHCM")
+                            .form-group.col-sm-12.mg-t1.mg-b1
+                                label.control-label MST:
+                                input.form-control(text='number',placeholder="1111111111")
+                            .form-group.col-sm-12.mg-t1.mg-b1
+                                label.control-label Mã nghề
+                                input.form-control(type='text')
+                            .form-group.col-sm-12.mg-t1.mg-b1
+                                label.control-label Điện thoại:
+                                input.form-control(text='number')
+                            .form-group.col-sm-12.mg-t1.mg-b1
+                                label.control-label Số fax:
+                                input.form-control(text='number')
+                            .form-group.col-sm-12.mg-t1.mg-b1
+                                label.control-label Email:
+                                input.form-control(text='text')
+                            .form-group.col-sm-12.mg-t1.mg-b1
+                                label.control-label Loại hình kinh doanh
+                                .col-sm-12
+                                    select.form-control(name='select')
+                                        option(value='opt1') Hộ kinh doanh
+                                        option(value='opt2') Hộ kinh doanh
+                                        option(value='opt3') Hộ kinh doanh
+                            .form-group.col-sm-12.mg-t1.mg-b1
+                                label.control-label Nhóm khách hàng
+                                .col-sm-12
+                                    select.form-control(name='select')
+                                        option(value='opt1') Khách hàng tiềm năng
+                                        option(value='otp2') Khách hàng bình thường
+                                        option(value='otp3') Khách hàng xấu
+                            .form-group.col-sm-12.mg-t1.mg-b1
+                                label.control-label Ghi chú
+                                textarea.form-control(name="", cols="20", rows="10")
+                        .form-actions.text-center.col-sm-12.mg-t3.mg-b1.pd-0
+                            button.btn.btn-primary(type='submit') Huỷ bỏ
+                            button.btn.btn-primary.mg-l-3(type='submit') Thêm mới
+                                        
+                
+                    

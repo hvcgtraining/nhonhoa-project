@@ -1,0 +1,35 @@
+extends ../layouts/layout.pug
+block main-content
+    .page-container
+        include ../patials/sidebar.pug
+        .page-content
+            h1.text-center Chi tiết yêu cầu mua hàng
+            .row
+                .col-md-8
+                    include ../patials/table-default.pug
+                .col-md-1.pd-t4.pd-b4(style="text-align:center;")
+                    i.fas.fa-angle-double-right.cs-icon-right-1.fz-20
+                    i.fas.fa-angle-double-down.cs-icon-down-1.fz-20
+                .col-md-3
+                    .mt-2
+                        .responsive-table-defaults
+                            table.table-defaults
+                                thead.table-head
+                                    tr 
+                                        th Mã HĐ
+                                        th Số HĐ
+                                tbody.table-body
+                                    tr
+                                        td 0123
+                                        td 111
+                                    tr
+                                        td 0123
+                                        td 111
+                                tfoot.table-foot
+                                    tr 
+                                        td Tổng
+                                        td
+                
+            .form-actions.text-right.col-sm-12.mg-t3.mg-b1.pd-0
+                    button.btn.btn-primary(type='submit') Đã sử lý
+                    button.btn.btn-primary.mg-l-3(type='submit') Tạo đơn đặt hàng

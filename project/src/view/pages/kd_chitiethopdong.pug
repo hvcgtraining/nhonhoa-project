@@ -1,0 +1,160 @@
+extends ../layouts/layout.pug
+block main-content
+    .page-container
+        include ../patials/sidebar.pug
+        .page-content
+            h1.text-center Chi tiết hợp đồng
+            .row.mg-t3 
+                .panel.panel-default(style="margin-bottom:15px")
+                    .panel-heading
+                        h6.panel-title
+                            |  Chi tiết hợp đồng
+                    .panel-body
+                        .row
+                            .form-group.col-sm-4.mg-t1.mg-b1
+                                label.control-label Mã hợp đồng: 
+                                input.form-control(type='text') 
+                            .form-group.col-sm-4.mg-t1.mg-b1
+                                label.control-label Ngày lập: 
+                                input.form-control(type='date', name="date") 
+                            .form-group.col-sm-4.mg-t1.mg-b1
+                                label.control-label Ngày thanh lý: 
+                                input.form-control(type='date', name="date")
+                        .row 
+                            .form-group.col-sm-4.mg-t1.mg-b1
+                                label.control-label Số HĐ: 
+                                input.form-control(type='text') 
+                            .form-group.col-sm-4.mg-t1.mg-b1
+                                label.control-label Số phụ lục HĐ: 
+                                input.form-control(type='text') 
+                            .form-group.mg-t1.mg-b1.col-sm-4
+                                label.control-label Hợp đồng siêu thị: 
+                                .block-inner
+                                    label.checkbox-inline
+                                        .checker
+                                            span
+                                                input.styled(type='checkbox')
+                                
+                        .row
+                            .form-group.col-sm-12.mg-t1.mg-b1
+                                label Diễn giải:
+                                textarea.form-control(rows='3', cols='5')
+                        .row
+                            .form-group.col-sm-4.mg-t1.mg-b1
+                                label.control-label Mã khách hàng:
+                                select.form-control(name='select')
+                                    option(value='I1BX05-901') I1BX05-901
+                                    option(value='I1BX05-902') I1BX05-902
+                                    option(value='I1BX05-903') I1BX05-903
+                                    option(value='I1BX05-904') I1BX05-904
+                                    option(value='I1BX05-905') I1BX05-905
+                                    option(value='I1BX05-906') I1BX05-906
+                                    option(value='I1BX05-907') I1BX05-907
+                                    option(value='I1BX05-908') I1BX05-908
+                            .col-sm-8.control-label.mg-t3.mg-b1.form-group.fz-16
+                                p.mg-t3 Cty TNHH ĐT &amp TM An Hòa (Hà Nội)
+            .row.mg-t3 
+                .responsive-table-defaults
+                    table.table-defaults
+                        thead.table-head
+                            tr
+                                th 
+                                th Mã Nhóm Thành Phần
+                                th Tên Nhóm
+                                th Số Lượng
+                                th Đơn Giá Bán
+                                th Thuế Suất
+                                th Thành Tiền + VAT
+                
+                        tbody.table-body
+                            tr
+                                td
+                                    .btn-control.row
+                                        button.col-6
+                                            i.fas.fa-edit
+                                        button.col-6
+                                            i.fas.fa-trash-alt
+                                td W001
+                                td Cân 1 2 5kg
+                                td 310000
+                                td 165000
+                                td 10
+                                td 51150000000
+                            tr
+                                td
+                                    .btn-control.row
+                                        button.col-6
+                                            i.fas.fa-edit
+                                        button.col-6
+                                            i.fas.fa-trash-alt
+
+                                td W001
+                                td Cân Nhựa 500g
+                                td 3000
+                                td 160600
+                                td 10
+                                td 481800000
+                            tr
+                                td
+                                    .btn-control.row
+                                        button.col-6
+                                            i.fas.fa-edit
+                                        button.col-6
+                                            i.fas.fa-trash-alt
+
+                                td 
+                                td 
+                                td 
+                                td
+                                td 
+                                td
+                            tr
+                                td
+                                    .btn-control.row
+                                        button.col-6
+                                            i.fas.fa-edit
+                                        button.col-6
+                                            i.fas.fa-trash-alt
+
+                                td 
+                                td 
+                                td 
+                                td
+                                td 
+                                td
+
+                
+                        tfoot.table-foot
+                            tr 
+                                td Tổng
+            .row.mg-t3 
+                .panel.panel-default(style="margin-bottom:15px")
+                    .panel-heading
+                        h6.panel-title
+                            |  Cập nhật/ Thêm mới
+                    .panel-body
+                        .row
+                            .form-group.col-sm-2.mg-t1.mg-b1
+                                label.control-label Mã nhóm:
+                                select.form-control(name='select')
+                                    option(value='I1BX05-901') W003
+                                    option(value='I1BX05-902') W004
+                                    option(value='I1BX05-903') W005
+                            .form-group.col-sm-4.mg-t1.mg-b1
+                                label.control-label Chi tiết: 
+                                input.form-control(type='text') 
+                            .form-group.col-sm-1.mg-t1.mg-b1
+                                label.control-label Số lượng: 
+                                input.form-control(type='number')
+                            .form-group.col-sm-3.mg-t1.mg-b1
+                                label.control-label Đơn giá: 
+                                input.form-control(type='number')
+                            .form-group.col-sm-2.mg-t1.mg-b1
+                                label.control-label Thuế: 
+                                input.form-control(type='number')
+                        .row.mg-t2
+                            .form-actions.text-right.col-sm-12
+                                button.btn.btn-primary(type='submit') Thêm/Cập nhật
+            .row.mg-t2
+                .form-actions.text-right
+                    button.btn.btn-primary(type='submit') Lưu

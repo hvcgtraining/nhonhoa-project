@@ -1,0 +1,26 @@
+extends ../layouts/layout.pug
+block main-content
+    .page-container
+        include ../patials/sidebar.pug
+        .page-content
+            h1.text-center Tạo mới phiếu kiểm hoá
+            .panel.panel-default
+                    .panel-heading
+                        h6.panel-title
+                            i.icon-grid
+                            |  Tạo mới phiếu kiểm hoá
+                    .panel-body
+                        .col-sm-12
+                            form.taomoiphieukiemhoa
+                                h3
+                                    input(type="radio" name="phieukiemhoa" value="vattu")  
+                                    span Phiếu kiểm hoá vật tư
+                                br
+                                h3
+                                    input(type="radio" name="phieukiemhoa" value="tole") 
+                                    span Phiếu kiểm hoá tole
+                            .row
+                                .form-actions.text-right.col-sm-12.mg-t1.mb-4
+                                    .col-sm-12
+                                        .form-group.col-sm-12
+                                            button.btn.btn-primary(type='submit') Tạo mới

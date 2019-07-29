@@ -1,0 +1,85 @@
+extends ../layouts/layout.pug
+block main-content
+    .page-container
+        include ../patials/sidebar.pug
+        .page-content
+            h1.text-center Danh sách nhà cung cấp
+            .mt-2
+                .table-title.row
+                    .field-search.col-6
+                        input(type="text" placeholder="Tìm kiếm ...")
+                        input(type="button" value="Tìm kiếm")
+                    .field-filter.col-6
+                        label Hiển thị :
+                        select
+                            option(value="") 10
+                            option(value="") 25
+                            option(value="") 50
+                            option(value="") 100
+                .responsive-table-defaults
+                    table.table-defaults
+                        thead.table-head
+                            tr
+                                th 
+                                th Mã NCC
+                                th Tên
+                                th Ngành hàng
+                                th Ghi chú
+                
+                        tbody.table-body
+                            tr
+                                td
+                                    .btn-control.row
+                                        button.col-6
+                                            i.fas.fa-edit
+                                        button.col-6
+                                            i.fas.fa-trash-alt
+                                td NCC001
+                                td Cty TNHH Bao Bì
+                                td Chuyên cung cấp các loại thùng giấy
+                                td NCC có giá tốt
+                            tr
+                                td
+                                    .btn-control.row
+                                        button.col-6
+                                            i.fas.fa-edit
+                                        button.col-6
+                                            i.fas.fa-trash-alt
+                                td NCC001
+                                td Cty TNHH Bao Bì
+                                td Chuyên cung cấp các loại thùng giấy
+                                td NCC có giá tốt
+                            tr
+                                td
+                                    .btn-control.row
+                                        button.col-6
+                                            i.fas.fa-edit
+                                        button.col-6
+                                            i.fas.fa-trash-alt
+
+                                td NCC001
+                                td Cty TNHH Bao Bì
+                                td Chuyên cung cấp các loại thùng giấy
+                                td NCC có giá tốt
+                            tr
+                                td
+                                    .btn-control.row
+                                        button.col-6
+                                            i.fas.fa-edit
+                                        button.col-6
+                                            i.fas.fa-trash-alt
+                                td NCC001
+                                td Cty TNHH Bao Bì
+                                td Chuyên cung cấp các loại thùng giấy
+                                td NCC có giá tốt
+                .box-pagination
+                    .form-actions.text-left(style="display:inline-block; vertical-align:middle;")
+                        button.btn.btn-primary(type='submit') Thêm mới nhà cung cấp                   
+                    .pagination-table
+                        a(href="#") Trang đầu 
+                        a(href="#") <<
+                        a.bg-hover(href="#") 1
+                        a.bg-hover(href="#") 2
+                        a.bg-hover(href="#") 3
+                        a(href="#") >> 
+                        a(href="#") Trang cuối

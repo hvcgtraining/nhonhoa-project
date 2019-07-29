@@ -1,0 +1,158 @@
+extends ../layouts/layout.pug
+block main-content
+    .page-container
+        include ../patials/sidebar.pug
+        .page-content
+            h1.text-center Chi tiết đơn giá bán
+            .row.mg-t3 
+                .panel.panel-default(style="margin-bottom:15px")
+                    .panel-heading
+                        h6.panel-title
+                            |  Chi tiết đơn giá bán
+                    .panel-body
+                        .row
+                            .form-group.col-sm-3.mg-t1.mg-b1
+                                label.control-label Áp dụng từ ngày: 
+                                input.form-control(type='date', name="date") 
+                            .form-group.col-sm-3.mg-t1.mg-b1
+                                label.control-label Đến ngày: 
+                                input.form-control(type='date', name="date") 
+                            .form-group.col-sm-3.mg-t1.mg-b1
+                                label.control-label Số chứng từ: 
+                                input.form-control(type='text') 
+                            .form-group.col-sm-3.mg-t1.mg-b1
+                                label.control-label Mã số thuế: 
+                                input.form-control(type='text') 
+                        .row
+            
+                            .form-group.col-sm-4.mg-t1.mg-b1
+                                label.control-label Mã khách hàng:
+                                select.form-control(name='select')
+                                    option(value='I1BX05-901') I1BX05-901
+                                    option(value='I1BX05-902') I1BX05-902
+                                    option(value='I1BX05-903') I1BX05-903
+                                    option(value='I1BX05-904') I1BX05-904
+                                    option(value='I1BX05-905') I1BX05-905
+                                    option(value='I1BX05-906') I1BX05-906
+                                    option(value='I1BX05-907') I1BX05-907
+                                    option(value='I1BX05-908') I1BX05-908
+                            .col-sm-8.control-label.mg-t3.mg-b1.form-group.fz-16
+                                p.mg-t3 Cty TNHH ĐT &amp TM An Hòa (Hà Nội)
+
+                        .row
+                            .form-group.col-sm-12.mg-t1.mg-b1
+                                label.control-label Nội dung: 
+                                input.form-control(type='text')
+
+                            .form-group.col-sm-12.mg-t1.mg-b1
+                                label.control-label Ghi chú: 
+                                input.form-control(type='text')
+
+            .row.mg-t3 
+                .responsive-table-defaults
+                    table.table-defaults
+                        thead.table-head
+                            tr
+                                th 
+                                th Mã Hàng Hóa
+                                th Tên Hàng Hóa
+                                th Đơn Giá
+                                th Thuế
+                                th Đơn Giá Thuế
+                                th Giá Bán
+                
+                        tbody.table-body
+                            tr
+                                td
+                                    .btn-control.row
+                                        button.col-6
+                                            i.fas.fa-edit
+                                        button.col-6
+                                            i.fas.fa-trash-alt
+                                td W1AN00-013
+                                td Cân 1kg (DInox tròn - X granite)
+                                td 150000
+                                td 10%
+                                td 15000
+                                td 165000
+                            tr
+                                td
+                                    .btn-control.row
+                                        button.col-6
+                                            i.fas.fa-edit
+                                        button.col-6
+                                            i.fas.fa-trash-alt
+
+                                td W1AN00-014
+                                td Cân 2kg (DInox tròn - X granite)
+                                td 150000
+                                td 10%
+                                td 15000
+                                td 165000
+                            tr
+                                td
+                                    .btn-control.row
+                                        button.col-6
+                                            i.fas.fa-edit
+                                        button.col-6
+                                            i.fas.fa-trash-alt
+
+                                td W1AN00-015
+                                td Cân 5kg (DInox tròn - X granite)
+                                td 150000
+                                td 10%
+                                td 15000
+                                td 165000
+                            tr
+                                td
+                                    .btn-control.row
+                                        button.col-6
+                                            i.fas.fa-edit
+                                        button.col-6
+                                            i.fas.fa-trash-alt
+
+                                td 
+                                td 
+                                td 
+                                td 
+                                td 
+                                td 
+            .row.mg-t3
+                .panel.panel-default(style="margin-bottom:15px")
+                    .panel-heading
+                        h6.panel-title Chỉnh sửa/Thêm mới
+                        .pull-right
+                            a.btn.btn-link.btn-icon(href='panel_options.html#')
+                                i.icon-wrench
+                    .panel-body
+                        .row
+            
+                            .form-group.col-sm-4.mg-t1.mg-b1
+                                label.control-label Mã hàng:
+                                select.form-control(name='select')
+                                    option(value='I1BX05-901') I1BX05-901
+                                    option(value='I1BX05-902') I1BX05-902
+                                    option(value='I1BX05-903') I1BX05-903
+                                    option(value='I1BX05-904') I1BX05-904
+                                    option(value='I1BX05-905') I1BX05-905
+                                    option(value='I1BX05-906') I1BX05-906
+                                    option(value='I1BX05-907') I1BX05-907
+                                    option(value='I1BX05-908') I1BX05-908
+                            .col-sm-4.control-label.mg-t3.mg-b1.form-group.fz-16
+                                p.mg-t3 Cân nhựa 500g
+                            .form-group.col-sm-2.mg-t1.mg-b1
+                                label Thuế:
+                                input.form-control(type='number')
+                        .row
+                            .form-group.col-sm-4.mg-t1.mg-b1
+                                label Đơn giá:
+                                input.form-control(type='number')
+                            .form-group.col-sm-4.mg-t1.mg-b1
+                                label Tiền thuế:
+                                input.form-control(type='number')
+                            .form-group.col-sm-4.mg-t1.mg-b1
+                                label Giá bán:
+                                input.form-control(type='number')
+                        .row
+                            .form-actions.text-right.col-sm-12
+                                button.btn.btn-primary(type='submit') Cập nhật/ Thêm

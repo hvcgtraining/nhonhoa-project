@@ -1,0 +1,37 @@
+extends ../layouts/layout.pug
+block main-content
+    .page-container
+        include ../patials/sidebar.pug
+        .page-content
+            h1.text-center Kế hoạch Sản xuất - Nhập kho - Xuất hàng
+            h2.text-center Từ ngày 25/02/2019 đến 02/03/2019
+            .row.mg-t3 
+                .form-category-classify-supplies
+                    .panel.panel-default(style="margin-bottom: 15px")
+                        .panel-heading
+                            h6.panel-title
+                                i.icon-paragraph-right2
+
+                        .panel-body
+                            .row
+                                .form-group.col-sm-6.pd-0
+                                    label.col-sm-12.control-label.text-left Từ Ngày:
+                                    .col-sm-12
+                                        input.form-control(type='date', name="date")
+                                .form-group.col-sm-6.mg-t1.pd-0
+                                    label.col-sm-12.control-label.text-left Đến Ngày:
+                                    .col-sm-12
+                                        input.form-control(type='date', name="date")
+                            .row
+                                .form-group.col-sm-6.pd-0
+                                    label.col-sm-12.control-label.text-left Tồn Kho:
+                                    .col-sm-12
+                                        input.form-control(type='date', name="date")
+                                .form-group.col-sm-6.mg-t1.pd-0
+                                    label.col-sm-12.control-label.text-left Số Ngày Dự Kiến Xuất Kho:
+                                    .col-sm-12
+                                        input.form-control(type='text', value='3')
+                            
+                            .row.mg-t2
+                                .form-actions.text-right.col-sm-12
+                                    input.btn.btn-primary(type='reset', value='Lập bảng KH')

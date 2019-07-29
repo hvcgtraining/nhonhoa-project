@@ -1,0 +1,462 @@
+extends ../layouts/layout.pug
+block main-content
+    .page-container
+        include ../patials/sidebar.pug
+        .page-content
+            h1.text-center Phiếu yêu cầu mua hàng
+            .table-title.row
+                .field-filter.float-left
+                    label Mã nhóm :
+                    select
+                        option(value="") BB-MY
+                        option(value="") AA-YM
+                        option(value="") AA-MY
+                        option(value="") BB-YM
+                .field-search.float-left.btn-box
+                    button.btn.btn-primary.form-add-show(type='submit') Thêm nhanh
+            .row
+                .col-md-6
+                    .box-tbl
+                        h6 Danh sách đặt hàng
+                        .responsive-table-defaults
+                            table.table-defaults
+                                thead.table-head
+                                    tr
+                                        th 
+                                        th Mã HĐ
+                                        th Số HĐ
+                                        th Ngày Lập
+                                        th Lượng
+                                        th Tiền
+                                        th Ngày KT
+                                        th Mã HĐ
+                                        th Số HĐ
+                                        th Ngày Lập
+                                        th Lượng
+                                        th Tiền
+                                        th Ngày KT
+                                        th Mã HĐ
+                                        th Số HĐ
+                                        th Ngày Lập
+                                        th Lượng
+                                        th Tiền
+                                        th Ngày KT
+                                tbody.table-body
+                                    tr
+                                        td
+                                            .btn-control.row
+                                                button.col-6
+                                                    i.fas.fa-edit
+                                                button.col-6
+                                                    i.fas.fa-trash-alt
+                                        td 0123
+                                        td 111
+                                        td 11/02/19
+                                        td 1.11
+                                        td 0
+                                        td 14/04/19
+                                        td 0123
+                                        td 111
+                                        td 11/02/19
+                                        td 1.11
+                                        td 0
+                                        td 14/04/19
+                                        td 0123
+                                        td 111
+                                        td 11/02/19
+                                        td 1.11
+                                        td 0
+                                        td 14/04/19
+                                    tr
+                                        td
+                                            .btn-control.row
+                                                button.col-6
+                                                    i.fas.fa-edit
+                                                button.col-6
+                                                    i.fas.fa-trash-alt
+                                        td 0123
+                                        td 111
+                                        td 11/02/19
+                                        td 1.11
+                                        td 0
+                                        td 14/04/19
+                                        td 0123
+                                        td 111
+                                        td 11/02/19
+                                        td 1.11
+                                        td 0
+                                        td 14/04/19
+                                        td 0123
+                                        td 111
+                                        td 11/02/19
+                                        td 1.11
+                                        td 0
+                                        td 14/04/19
+                                    tr
+                                        td
+                                            .btn-control.row
+                                                button.col-6
+                                                    i.fas.fa-edit
+                                                button.col-6
+                                                    i.fas.fa-trash-alt
+                                        td 0123
+                                        td 111
+                                        td 11/02/19
+                                        td 1.11
+                                        td 0
+                                        td 14/04/19
+                                        td 0123
+                                        td 111
+                                        td 11/02/19
+                                        td 1.11
+                                        td 0
+                                        td 14/04/19
+                                        td 0123
+                                        td 111
+                                        td 11/02/19
+                                        td 1.11
+                                        td 0
+                                        td 14/04/19
+                                    tr
+                                        td
+                                            .btn-control.row
+                                                button.col-6
+                                                    i.fas.fa-edit
+                                                button.col-6
+                                                    i.fas.fa-trash-alt
+                                        td 0123
+                                        td 111
+                                        td 11/02/19
+                                        td 1.11
+                                        td 0
+                                        td 14/04/19
+                                        td 0123
+                                        td 111
+                                        td 11/02/19
+                                        td 1.11
+                                        td 0
+                                        td 14/04/19
+                                        td 0123
+                                        td 111
+                                        td 11/02/19
+                                        td 1.11
+                                        td 0
+                                        td 14/04/19
+                                    tr
+                                        td
+                                            .btn-control.row
+                                                button.col-6
+                                                    i.fas.fa-edit
+                                                button.col-6
+                                                    i.fas.fa-trash-alt
+                                        td 0123
+                                        td 111
+                                        td 11/02/19
+                                        td 1.11
+                                        td 0
+                                        td 14/04/19
+                                        td 0123
+                                        td 111
+                                        td 11/02/19
+                                        td 1.11
+                                        td 0
+                                        td 14/04/19
+                                        td 0123
+                                        td 111
+                                        td 11/02/19
+                                        td 1.11
+                                        td 0
+                                        td 14/04/19
+                                    tr
+                                        td
+                                            .btn-control.row
+                                                button.col-6
+                                                    i.fas.fa-edit
+                                                button.col-6
+                                                    i.fas.fa-trash-alt
+                                        td 0123
+                                        td 111
+                                        td 11/02/19
+                                        td 1.11
+                                        td 0
+                                        td 14/04/19
+                                        td 0123
+                                        td 111
+                                        td 11/02/19
+                                        td 1.11
+                                        td 0
+                                        td 14/04/19
+                                        td 0123
+                                        td 111
+                                        td 11/02/19
+                                        td 1.11
+                                        td 0
+                                        td 14/04/19
+                                tfoot.table-foot
+                                    tr 
+                                        td Tổng
+                                        td
+                                        td
+                                        td
+                                        td
+                                        td
+                                        td
+                                        td
+                                        td
+                                        td
+                                        td
+                                        td
+                                        td
+                                        td
+                                        td
+                                        td
+                                        td
+                                        td
+                                        td
+                    .panel.panel-default.mg-t3.form-hide(style="margin-bottom:15px")
+                        .panel-heading
+                            h6.panel-title Thêm/Sửa
+                        .panel-body
+                            .form-group
+                                label.control-label.col-sm-12 Tìm kiếm: 
+                                .form-group
+                                    .col-sm-5
+                                        select.form-control(name='select')
+                                            option(value='opt1') N1B0001-888
+                                            option(value='opt2') N1B0001-999
+                                            option(value='opt3') N1B0001-666
+                                            option(value='opt4') N1B0001-777
+                                    .col-sm-7
+                                        input.form-control(type='text', placeholder='Thùng giấy cân 10kg/8*/CDC')
+                            .form-group.col-sm-12.mg-t1.mg-b1
+                                label Số lượng:
+                                input.form-control(type='text',placeholder="Bộ")
+                            .form-group.col-sm-12.mg-t1.mg-b1
+                                label Ghi chú:
+                                textarea.form-control(rows='4', cols='5')
+                            .form-actions.text-left.col-sm-12.mg-t1.mg-b1
+                                button.btn.btn-primary(type='submit') Thêm
+                .col-md-6.padding-left
+                    .row
+                        .col-md-1
+                            input.inputbox(type="button", value=">>")
+                        .col-md-11
+                            h6 Dự kiến giao hàng
+                            .box-tbl
+                                .responsive-table-defaults
+                                    table.table-defaults
+                                        thead.table-head
+                                            tr
+                                                th 
+                                                th Mã HĐ
+                                                th Số HĐ
+                                                th Ngày Lập
+                                                th Lượng
+                                                th Tiền
+                                                th Ngày KT
+                                                th Mã HĐ
+                                                th Số HĐ
+                                                th Ngày Lập
+                                                th Lượng
+                                                th Tiền
+                                                th Ngày KT
+                                                th Mã HĐ
+                                                th Số HĐ
+                                                th Ngày Lập
+                                                th Lượng
+                                                th Tiền
+                                                th Ngày KT
+                                        tbody.table-body
+                                            tr
+                                                td
+                                                    .btn-control.row
+                                                        button.col-6
+                                                            i.fas.fa-edit
+                                                        button.col-6
+                                                            i.fas.fa-trash-alt
+                                                td 0123
+                                                td 111
+                                                td 11/02/19
+                                                td 1.11
+                                                td 0
+                                                td 14/04/19
+                                                td 0123
+                                                td 111
+                                                td 11/02/19
+                                                td 1.11
+                                                td 0
+                                                td 14/04/19
+                                                td 0123
+                                                td 111
+                                                td 11/02/19
+                                                td 1.11
+                                                td 0
+                                                td 14/04/19
+                                            tr
+                                                td
+                                                    .btn-control.row
+                                                        button.col-6
+                                                            i.fas.fa-edit
+                                                        button.col-6
+                                                            i.fas.fa-trash-alt
+                                                td 0123
+                                                td 111
+                                                td 11/02/19
+                                                td 1.11
+                                                td 0
+                                                td 14/04/19
+                                                td 0123
+                                                td 111
+                                                td 11/02/19
+                                                td 1.11
+                                                td 0
+                                                td 14/04/19
+                                                td 0123
+                                                td 111
+                                                td 11/02/19
+                                                td 1.11
+                                                td 0
+                                                td 14/04/19
+                                            tr
+                                                td
+                                                    .btn-control.row
+                                                        button.col-6
+                                                            i.fas.fa-edit
+                                                        button.col-6
+                                                            i.fas.fa-trash-alt
+                                                td 0123
+                                                td 111
+                                                td 11/02/19
+                                                td 1.11
+                                                td 0
+                                                td 14/04/19
+                                                td 0123
+                                                td 111
+                                                td 11/02/19
+                                                td 1.11
+                                                td 0
+                                                td 14/04/19
+                                                td 0123
+                                                td 111
+                                                td 11/02/19
+                                                td 1.11
+                                                td 0
+                                                td 14/04/19
+                                            tr
+                                                td
+                                                    .btn-control.row
+                                                        button.col-6
+                                                            i.fas.fa-edit
+                                                        button.col-6
+                                                            i.fas.fa-trash-alt
+                                                td 0123
+                                                td 111
+                                                td 11/02/19
+                                                td 1.11
+                                                td 0
+                                                td 14/04/19
+                                                td 0123
+                                                td 111
+                                                td 11/02/19
+                                                td 1.11
+                                                td 0
+                                                td 14/04/19
+                                                td 0123
+                                                td 111
+                                                td 11/02/19
+                                                td 1.11
+                                                td 0
+                                                td 14/04/19
+                                            tr
+                                                td
+                                                    .btn-control.row
+                                                        button.col-6
+                                                            i.fas.fa-edit
+                                                        button.col-6
+                                                            i.fas.fa-trash-alt
+                                                td 0123
+                                                td 111
+                                                td 11/02/19
+                                                td 1.11
+                                                td 0
+                                                td 14/04/19
+                                                td 0123
+                                                td 111
+                                                td 11/02/19
+                                                td 1.11
+                                                td 0
+                                                td 14/04/19
+                                                td 0123
+                                                td 111
+                                                td 11/02/19
+                                                td 1.11
+                                                td 0
+                                                td 14/04/19
+                                            tr
+                                                td
+                                                    .btn-control.row
+                                                        button.col-6
+                                                            i.fas.fa-edit
+                                                        button.col-6
+                                                            i.fas.fa-trash-alt
+                                                td 0123
+                                                td 111
+                                                td 11/02/19
+                                                td 1.11
+                                                td 0
+                                                td 14/04/19
+                                                td 0123
+                                                td 111
+                                                td 11/02/19
+                                                td 1.11
+                                                td 0
+                                                td 14/04/19
+                                                td 0123
+                                                td 111
+                                                td 11/02/19
+                                                td 1.11
+                                                td 0
+                                                td 14/04/19
+                                        tfoot.table-foot
+                                            tr 
+                                                td Tổng
+                                                td
+                                                td
+                                                td
+                                                td
+                                                td
+                                                td
+                                                td
+                                                td
+                                                td
+                                                td
+                                                td
+                                                td
+                                                td
+                                                td
+                                                td
+                                                td
+                                                td
+                                                td    
+                            .form-actions.text-right.mg-b1.mg-t3
+                                button.btn.btn-primary(type='submit') Xem tất cả
+                            .panel.panel-default.formbox.mg-t3
+                                .panel-heading
+                                    h6.panel-title
+                                        i.icon-grid
+                                        |  Tạo định mức vật tư
+                                .panel-body
+                                    .form-group.col-sm-12.mg-t1.mg-b1
+                                        .row
+                                            .form-group.col-sm-6.mg-t1.mg-b1
+                                                label.control-label Số lượng: 
+                                                input.form-control(type='number', placeholder='2000')
+                                            .form-group.col-sm-6.mg-t1.mg-b1
+                                                label.control-label Ngày giao: 
+                                                input.form-control(type='date', name="date")
+                                            .form-actions.text-right.col-sm-12.mg-t3.mg-b1
+                                                button.btn.btn-primary(type='submit') Thêm mới
+            .form-actions.text-right.col-sm-12.mg-t3.mg-b1.pd-0
+                button.btn.btn-primary(type='submit') Quay lại
+                button.btn.btn-primary.mg-l-3(type='submit') In
+                button.btn.btn-primary.mg-l-3(type='submit') Tạo yêu cầu

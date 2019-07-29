@@ -1,0 +1,48 @@
+extends ../layouts/layout.pug
+block main-content
+    .page-container
+        include ../patials/sidebar.pug
+        .page-content
+            h1.text-center Cài đặt - màn hình chính
+            h5.text-center Số lượng components hiển thị
+            h5.text-center (1,2,4,6,8)
+            .row
+                .col-sm-12
+                    .panel.panel-default
+                        .panel-heading
+                            h6.panel-title
+                                i.icon-grid
+                                | Chi tiết
+                        .panel-body
+                            .form-group.col-sm-12
+                                .form-group.col-sm-12.mg-t1.mg-b1
+                                    label.control-label Component 1
+                                    select.form-control(name='select')
+                                        option(value="component") Yêu cầu mua hàng 
+                                        option(value="component") Yêu cầu mua hàng
+                                .form-group.col-sm-12.mg-t1.mg-b1
+                                    label.control-label Component 2
+                                    select.form-control(name='select')
+                                        option(value="component") Yêu cầu mua hàng 
+                                        option(value="component") Yêu cầu mua hàng
+                                .form-group.col-sm-12.mg-t1.mg-b1
+                                    label.control-label Component 3
+                                    select.form-control(name='select')
+                                        option(value="component") Theo dõi xuất hàng 
+                                        option(value="component") Theo dõi xuất hàng 
+                                .form-group.col-sm-6.mg-t1.mg-b1
+                                    label.control-label Component 4
+                                    select.form-control(name='select')
+                                        option(value="component") Báo cáo - thống kê 
+                                        option(value="component") Báo cáo - thống kê
+                                .form-group.col-sm-6.mg-t1.mg-b1
+                                    label.control-label Biểu đồ
+                                    select.form-control(name='select')
+                                        option(value="component") Biểu đồ doanh số bán hàng
+                                        option(value="component") Biểu đồ doanh số bán hàng
+                            .col-sm-12
+                                .form-actions.text-right.mg-t2.col-sm-12.pd-0
+                                    label.control-label 
+                                    button.btn.btn-primary.mg-t3(type='submit') Xác nhận thiết lập
+
+                

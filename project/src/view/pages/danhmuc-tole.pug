@@ -1,0 +1,149 @@
+extends ../layouts/layout.pug
+block main-content
+    .page-container
+        include ../patials/sidebar.pug
+        .page-content
+            h1.text-center Danh mục tole
+            .mt-2
+                .table-title.row
+                    .field-search.col-6
+                        input(type="text" placeholder="Tìm kiếm ...")
+                        input(type="button" value="Tìm kiếm")
+                    .field-filter.col-6
+                        label Hiển thị :
+                        select
+                            option(value="") 10
+                            option(value="") 25
+                            option(value="") 50
+                            option(value="") 100
+                .responsive-table-defaults
+                    table.table-defaults
+                        thead.table-head
+                            tr
+                                th 
+                                th Mã HĐ
+                                th Số HĐ
+                                th Ngày Lập
+                                th Lượng
+                                th Tiền
+                                th Ngày KT
+                                th Mã HĐ
+                                th Số HĐ
+                                th Ngày Lập
+                                th Lượng
+                                th Tiền
+                                th Ngày KT
+                                th Mã HĐ
+                                th Số HĐ
+                                th Ngày Lập
+                                th Lượng
+                                th Tiền
+                                th Ngày KT
+                        tbody.table-body
+                            tr
+                                td
+                                    .btn-control.row
+                                        button.col-6
+                                            i.fas.fa-edit
+                                        button.col-6
+                                            i.fas.fa-trash-alt
+                                td 0123
+                                td 111
+                                td 11/02/19
+                                td 1.11
+                                td 0
+                                td 14/04/19
+                                td 0123
+                                td 111
+                                td 11/02/19
+                                td 1.11
+                                td 0
+                                td 14/04/19
+                                td 0123
+                                td 111
+                                td 11/02/19
+                                td 1.11
+                                td 0
+                                td 14/04/19
+                            tr
+                                td
+                                    .btn-control.row
+                                        button.col-6
+                                            i.fas.fa-edit
+                                        button.col-6
+                                            i.fas.fa-trash-alt
+                                td 0123
+                                td 111
+                                td 11/02/19
+                                td 1.11
+                                td 0
+                                td 14/04/19
+                                td 0123
+                                td 111
+                                td 11/02/19
+                                td 1.11
+                                td 0
+                                td 14/04/19
+                                td 0123
+                                td 111
+                                td 11/02/19
+                                td 1.11
+                                td 0
+                                td 14/04/19
+                            tr
+                                td
+                                    .btn-control.row
+                                        button.col-6
+                                            i.fas.fa-edit
+                                        button.col-6
+                                            i.fas.fa-trash-alt
+                                td 0123
+                                td 111
+                                td 11/02/19
+                                td 1.11
+                                td 0
+                                td 14/04/19
+                                td 0123
+                                td 111
+                                td 11/02/19
+                                td 1.11
+                                td 0
+                                td 14/04/19
+                                td 0123
+                                td 111
+                                td 11/02/19
+                                td 1.11
+                                td 0
+                                td 14/04/19
+                        tfoot.table-foot
+                            tr 
+                                td Tổng
+                                td
+                                td
+                                td
+                                td
+                                td
+                                td
+                                td
+                                td
+                                td
+                                td
+                                td
+                                td
+                                td
+                                td
+                                td
+                                td
+                                td
+                                td
+                .box-pagination
+                    .form-actions.text-left.mg-t1(style="display:inline-block; vertical-align:middle;")
+                        button.btn.btn-primary(type='submit') Tạo mới
+                    .pagination-table
+                        a(href="#") Trang đầu 
+                        a(href="#") <<
+                        a.bg-hover(href="#") 1
+                        a.bg-hover(href="#") 2
+                        a.bg-hover(href="#") 3
+                        a(href="#") >> 
+                        a(href="#") Trang cuối

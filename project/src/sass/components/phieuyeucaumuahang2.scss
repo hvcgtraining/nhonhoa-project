@@ -1,0 +1,45 @@
+.float-left{
+    float: left !important;
+}
+.btn-box{
+    .btn{
+        padding: 6px 12px !important;
+        margin-left: 15px;
+    }
+}
+.box-tbl{
+    overflow: auto;
+}
+.inputField{
+    padding: 7px 9px 8px 9px;
+    margin-left: 10px;
+}
+.inputbox{
+    background-color: transparent;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    margin-top: 30px;
+}
+.form-box-show{
+    display: none;
+}
+.padding-left{
+    padding-left: 0 !important;
+}
+@media (max-width: 992px) {
+    .padding-left{
+        padding-left: 15px !important;
+    }
+    .inputbox{
+        margin-top: 0;
+    }
+}
+.btn{
+    i{
+        margin: 0 !important;
+    }
+}
+.control-label{
+    white-space: nowrap;
+}

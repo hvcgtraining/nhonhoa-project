@@ -1,0 +1,90 @@
+extends ../layouts/layout.pug
+block main-content
+    .page-container
+        include ../patials/sidebar.pug
+        .page-content
+            h1.text-center Danh sách phiếu kiểm hóa
+            .mt-2
+                .table-title.row
+                    .field-search.col-6
+                        input(type="text" placeholder="Tìm kiếm ...")
+                        input(type="button" value="Tìm kiếm")
+                    .field-filter.col-6
+                        label Hiển thị :
+                        select
+                            option(value="") 10
+                            option(value="") 25
+                            option(value="") 50
+                            option(value="") 100
+                .responsive-table-defaults
+                    table.table-defaults
+                        thead.table-head
+                            tr
+                                th 
+                                th Số KH
+                                th Ngày Lập
+                                th Mã KH
+                                th Tên KH
+                                th Tình Trạng
+                
+                        tbody.table-body
+                            tr
+                                td
+                                    .btn-control.row
+                                        button.col-6
+                                            i.fas.fa-edit
+                                        button.col-6
+                                            i.fas.fa-trash-alt
+                                td 19022708/PKH
+                                td 27/02/2019
+                                td CAB32
+                                td Cty THHH Yueng Fong Yu
+                                td Đang chờ
+                            tr
+                                td
+                                    .btn-control.row
+                                        button.col-6
+                                            i.fas.fa-edit
+                                        button.col-6
+                                            i.fas.fa-trash-alt
+                                td 19022707/PKH
+                                td 27/02/2019
+                                td CAB32
+                                td Cty THHH Yueng Fong Yu
+                                td Đang chờ
+                            tr
+                                td
+                                    .btn-control.row
+                                        button.col-6
+                                            i.fas.fa-edit
+                                        button.col-6
+                                            i.fas.fa-trash-alt
+
+                                td 19022706/PKH
+                                td 27/02/2019
+                                td CAB32
+                                td Cty THHH Yueng Fong Yu
+                                td Đang chờ
+                            tr
+                                td
+                                    .btn-control.row
+                                        button.col-6
+                                            i.fas.fa-edit
+                                        button.col-6
+                                            i.fas.fa-trash-alt
+
+                                td 19022705/PKH
+                                td 27/02/2019
+                                td CAB32
+                                td Cty THHH Yueng Fong Yu
+                                td Đang chờ
+                .box-pagination
+                    .form-actions.text-left(style="display:inline-block; vertical-align:middle;")
+                    .pagination-table
+                        a(href="#") Trang đầu 
+                        a(href="#") <<
+                        a.bg-hover(href="#") 1
+                        a.bg-hover(href="#") 2
+                        a.bg-hover(href="#") 3
+                        a(href="#") >> 
+                        a(href="#") Trang cuối

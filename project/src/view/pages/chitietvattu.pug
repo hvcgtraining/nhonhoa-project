@@ -1,0 +1,39 @@
+extends ../layouts/layout.pug
+block main-content
+    .page-container
+        include ../patials/sidebar.pug
+        .page-content
+            h1.text-center Chi tiết vật tư
+
+            .row
+                .col-sm-9
+                    .panel.panel-default(style="margin-bottom:15px")
+                        .panel-heading
+                            h6.panel-title Chi tiết vật tư
+                            
+                        .panel-body
+                            .row
+                                .form-group.col-sm-6.mg-t1.mg-b1
+                                    label Ngày lập:
+                                    input.form-control(type='date')
+                                .form-group.col-sm-6.mg-t1.mg-b1
+                                    label Mã chi tiết:
+                                    input.form-control(type='text')
+                            .row      
+                                .form-group.col-sm-6.mg-t1.mg-b1
+                                    label Tên chi tiết:
+                                    input.form-control(type='text')
+                                .form-group.col-sm-6.mg-t1.mg-b1
+                                    label Đơn vị:
+                                    input.form-control(type='text', value='')  
+                            .form-group.mg-t1.mg-b1
+                                label Ghi chú:
+                                textarea.form-control(rows='3', cols='5')
+                    
+                .col-sm-3
+                    img(src="https://cdn3.iconfinder.com/data/icons/seo-glyph-2/24/gear-setting-512.png", style="width: 100%")
+            .row.mg-t3
+                .form-actions.text-right
+                    button.btn.btn-primary.mg-r2(type='submit') Trở về
+                    button.btn.btn-primary(type='submit') Thoát
+            
