@@ -10,7 +10,22 @@ var passin = document.querySelector('.pass-in');
 var error = document.querySelector('.text-vali'); // add
 
 var showBtnadd = document.querySelector('.form-add-show');
-var formShow = document.querySelector('.form-hide');
+var formShow = document.querySelector('.form-hide'); //table
+
+var tableDefault = document.querySelector('#table-defaults');
+var tbody = tableDefault.querySelector('tbody');
+var trTable = tbody.getElementsByTagName("tr");
+trTable.addEventListener('click', function () {
+  console.log('hi');
+});
+
+for (var i = 0; i < trTable.length; i++) {
+  trTable[i].addEventListener('click', function () {
+    console.log('hi');
+    window.location = "../../html/pages/danhsachchitietdinhmucvattu.html";
+  });
+}
+
 showBtnadd.addEventListener('click', function () {
   formShow.classList.toggle('dpl-block');
 });

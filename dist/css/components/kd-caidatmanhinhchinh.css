@@ -1,0 +1,12 @@
+section .header-kd-caidatmanhinhchinh {
+  text-align: center; }
+
+section .kd-caidatmhchinh {
+  padding: 2rem;
+  border: 2px solid black; }
+  section .kd-caidatmhchinh legend {
+    display: block;
+    padding: 0 0.5rem;
+    font-size: 21px;
+    line-height: inherit;
+    color: #333; }
