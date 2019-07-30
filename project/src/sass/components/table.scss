@@ -123,6 +123,9 @@
     width: 100%;
     border: 1px solid #ddd;
     background-color: #fff;
+    th{
+        white-space: nowrap;
+    }
     th, td {
         border: none;
         text-align: left;

@@ -148,6 +148,8 @@
   width: 100%;
   border: 1px solid #ddd;
   background-color: #fff; }
+  .table-defaults th {
+    white-space: nowrap; }
   .table-defaults th, .table-defaults td {
     border: none;
     text-align: left;
@@ -695,6 +697,19 @@
 
 .cs-icon-down-1 {
   display: none; }
+
+input[type=radio] {
+  font-size: 18px; }
+
+.label-radio {
+  margin-left: 15px;
+  margin-bottom: 20px;
+  font-size: 18px; }
+
+.btn-defaults {
+  width: 80px;
+  height: 40px;
+  font-family: sans-serif; }
 
 @media only screen and (max-width: 991px) {
   .cs-icon-right-1 {

@@ -101,6 +101,8 @@
   width: 100%;
   border: 1px solid #ddd;
   background-color: #fff; }
+  .table-defaults th {
+    white-space: nowrap; }
   .table-defaults th, .table-defaults td {
     border: none;
     text-align: left;
