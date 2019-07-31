@@ -299,3 +299,14 @@
     width: auto !important; }
   .custom-table-1 .table .tbl-content tbody tr td {
     border: 1px solid #88888845; }
+
+.row-group {
+  border-bottom: none !important; }
+  .row-group th {
+    background: white;
+    color: #333;
+    font-weight: 700 !important;
+    font-size: 15px; }
+  .row-group td {
+    background: white;
+    color: #555; }

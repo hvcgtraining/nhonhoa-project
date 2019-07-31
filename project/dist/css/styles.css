@@ -347,6 +347,17 @@
   .custom-table-1 .table .tbl-content tbody tr td {
     border: 1px solid #88888845; }
 
+.row-group {
+  border-bottom: none !important; }
+  .row-group th {
+    background: white;
+    color: #333;
+    font-weight: 700 !important;
+    font-size: 15px; }
+  .row-group td {
+    background: white;
+    color: #555; }
+
 .page-content-inner {
   padding-top: 15px; }
 
@@ -446,8 +457,56 @@
 .mg-l--5 {
   margin-left: -25px !important; }
 
+.mg-0 {
+  margin: 0 !important; }
+
+.mg-1 {
+  margin: 5px !important; }
+
+.mg-2 {
+  margin: 10px !important; }
+
+.mg-3 {
+  margin: 15px !important; }
+
+.mg-4 {
+  margin: 20px !important; }
+
+.mg-l0 {
+  margin-left: 0 !important; }
+
+.mg-l1 {
+  margin-left: 5px !important; }
+
+.mg-l2 {
+  margin-left: 10px !important; }
+
+.mg-l3 {
+  margin-left: 15px !important; }
+
+.mg-l4 {
+  margin-left: 20px !important; }
+
+.mg-r0 {
+  margin-right: 0 !important; }
+
+.mg-r1 {
+  margin-right: 5px !important; }
+
 .mg-r2 {
   margin-right: 10px !important; }
+
+.mg-r3 {
+  margin-right: 15px !important; }
+
+.mg-r4 {
+  margin-right: 20px !important; }
+
+.mg-t0 {
+  margin-top: 0 !important; }
+
+.mg-t1 {
+  margin-top: 5px !important; }
 
 .mg-t2 {
   margin-top: 10px !important; }
@@ -455,8 +514,14 @@
 .mg-t3 {
   margin-top: 15px !important; }
 
-.mg-t1 {
-  margin-top: 5px !important; }
+.mg-t4 {
+  margin-top: 20px !important; }
+
+.mg-b0 {
+  margin-bottom: 0 !important; }
+
+.mg-b1 {
+  margin-bottom: 5px !important; }
 
 .mg-b2 {
   margin-bottom: 10px !important; }
@@ -464,11 +529,14 @@
 .mg-b3 {
   margin-bottom: 15px !important; }
 
-.mg-b1 {
-  margin-bottom: 5px !important; }
+.mg-b4 {
+  margin-bottom: 20px !important; }
 
 .mg-b0 {
   margin-bottom: 0; }
+
+.mg-auto {
+  margin: auto; }
 
 .text-center-custom {
   text-align: center !important; }
@@ -549,6 +617,14 @@
   -webkit-border-radius: 5px 5px 0 0;
   -moz-border-radius: 5px 5px 0 0;
   border-radius: 5px 5px 0 0; }
+
+.ps-ab-right {
+  position: absolute;
+  right: 0;
+  height: 100%; }
+
+.height-full {
+  height: 100%; }
 
 .tabs-vertical .nav-tabs {
   border-bottom: none; }
@@ -707,7 +783,7 @@ input[type=radio] {
   font-size: 18px; }
 
 .btn-defaults {
-  width: 80px;
+  width: 100px;
   height: 40px;
   font-family: sans-serif; }
 
@@ -2372,3 +2448,21 @@ a.ui-button:hover, a.ui-button:focus {
   justify-content: flex-end; }
   .form-kd .form-checkbox label {
     padding: 0 1rem; }
+
+.box-title-001 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.bd-bt-01 {
+  border-bottom: 1px solid #eeeeee; }

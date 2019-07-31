@@ -1,0 +1,62 @@
+extends ../layouts/layout.pug
+block main-content
+    .page-container
+        include ../patials/sidebar.pug
+        .page-content
+            h1.text-center Tổng hợp gia công quản lý
+            .row.mg-t3
+                .col-sm-8
+                    .panel.panel-default(style="margin-bottom:15px")
+                        .panel-heading
+                            h6.panel-title
+                                |  Hệ thống quản lý kế hoạch
+                        .panel-body
+                            .row
+                                .col-sm-6
+                                    .form-group.mg-t1.mg-b1
+                                        label.control-label Từ ngày: 
+                                        input.form-control(type='date', name="date")
+                                .col-sm-6
+                                    .form-group.mg-t1.mg-b1
+                                        label.control-label Đến ngày:
+                                        input.form-control(type='date', name="date")
+            .row.mg-t3.position-re
+                .col-sm-6
+                    .panel.panel-default.mg-0
+                        .panel-heading
+                            h6.panel-title
+                                |  Chọn :
+                        .panel-body
+                            .row
+                                .col-sm-12
+                                    .form-group.mg-t1.mg-b1
+                                        input(type="radio", name="radio", value="12", checked)
+                                        span.label-radio
+                                            label In tổng hợp
+                                    .form-group.mg-t1.mg-b1
+                                        input(type="radio", name="radio", value="12")
+                                        span.label-radio
+                                            label In chi tiết
+                                    .form-group.mg-t1.mg-b1
+                                        input(type="radio", name="radio", value="12")
+                                        span.label-radio
+                                            label In bản kê thực hiện mã G
+                .col-sm-6.ps-ab-right
+                    .panel.panel-default.height-full(style="margin-bottom:15px")
+                        .panel-heading
+                            h6.panel-title
+                                |  Chọn :
+                        .panel-body
+                            .row
+                                .col-sm-12
+                                    .form-group.mg-t1.mg-b1
+                                        input(type="radio", name="radios", value="12", checked)
+                                        span.label-radio
+                                            label In tổng hợp
+                                    .form-group.mg-t1.mg-b1
+                                        input(type="radio", name="radios", value="12")
+                                        span.label-radio
+                                            label In chi tiết
+            .form-actions.text-center.mg-b1.mg-t3
+                button.btn.btn-primary.btn-defaults.mg-r3(type='submit') In báo cáo
+                button.btn.btn-primary.btn-defaults.mg-r3(type='submit') Thoát
