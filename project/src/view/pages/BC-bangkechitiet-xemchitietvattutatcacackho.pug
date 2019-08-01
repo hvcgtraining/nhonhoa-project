@@ -1,0 +1,90 @@
+extends ../layouts/layout.pug
+block main-content
+    .page-container
+        include ../patials/sidebar.pug
+        .page-content
+            h1.text-center Bảng kê chi tiết vật tư
+            .box-title-001
+                h6.mg-r3.mg-l3(style="font-style:italic;") Từ ngày 22/07/2019
+                h6.mg-r3.mg-l3(style="font-style:italic;") Đến ngày: 29/07/2019
+            .mt-2
+                .responsive-table-defaults
+                    table.table-defaults
+                        thead.table-head
+                            tr
+                                th STT
+                                th Chứng từ
+                                th Ngày
+                                th Lượng tăng
+                                th Lượng giảm
+                                th Lượng tồn
+                        tbody.table-body.bd-bt-01
+                            tr.row-group
+                                th CDT
+                                th(colspan =" 2 ") Tổ căn Diện Từ/P.NCPT
+                                th
+                                th
+                                th
+                        tbody.table-body.bd-bt-01
+                            tr.row-group 
+                                th I1A035-901
+                                th(colspan="2") Bảng tên Nhơn Hòa CBDT
+                                th
+                                th Số dư đầu kỳ:
+                                th 121,00
+                            tr.row-group
+                                td 1
+                                td 
+                                td 
+                                td 
+                                td 
+                                td 121,00
+                            tr.row-group
+                                td 
+                                td 
+                                td Cộng:
+                                td 
+                                td
+                                td 
+                        tbody.table-body.bd-bt-01
+                            tr.row-group 
+                                th I1A035-901
+                                th(colspan="2") IC bo mạch chủ 984C62L+
+                                th
+                                th Số dư đầu kỳ:
+                                th 2,00
+                            tr.row-group
+                                td 1
+                                td 
+                                td 
+                                td 
+                                td 
+                                td 2,00
+                            tr.row-group
+                                td 
+                                td 
+                                td Cộng:
+                                td 
+                                td
+                                td
+                        tbody.table-body.bd-bt-01
+                            tr.row-group 
+                                th I1A035-901
+                                th(colspan="2") ID ADS 1232
+                                th
+                                th Số dư đầu kỳ:
+                                th 8,00
+                            tr.row-group
+                                td 1
+                                td 
+                                td 
+                                td 
+                                td 
+                                td 8,00
+                            tr.row-group
+                                td 
+                                td 
+                                td Cộng:
+                                td 
+                                td
+                                td        

@@ -2049,7 +2049,8 @@ body.boxed {
 .user-menu > a {
   padding: 18px 16px;
   display: block;
-  background: #2D3A42 url(../images/interface/nav_arrow_right.png) no-repeat 220px;
+  background: #FFFFFF url(../images/interface/nav_arrow_right.png) no-repeat 220px;
+  box-shadow: 1px 0 20px rgba(0,0,0,.08);
 }
 .user-menu > a img {
   width: 48px;
@@ -2137,7 +2138,7 @@ body.boxed {
 .user-info {
   margin-left: 12px;
   float: left;
-  color: #FFF;
+  color: #98a6ad;
   font-weight: 400;
   margin-top: 8px;
 }
