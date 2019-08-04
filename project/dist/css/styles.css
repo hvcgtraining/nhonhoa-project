@@ -30,7 +30,7 @@
   left: 0;
   width: 240px;
   bottom: 0;
-  background: #3A4B55; }
+  background: white; }
 
 .navigation .setwidthadmin {
   width: 54px !important; }
@@ -40,7 +40,7 @@
     position: fixed;
     left: -240px;
     bottom: 0;
-    background: #3A4B55; }
+    background: white; }
   .navigation .setwidthadmin {
     left: 0px !important;
     width: 240px !important; } }
@@ -347,6 +347,10 @@
   .custom-table-1 .table .tbl-content tbody tr td {
     border: 1px solid #88888845; }
 
+.row-group.tr-parent,
+.row-group.tr-head {
+  border-bottom: 1px solid #eee !important; }
+
 .row-group {
   border-bottom: none !important; }
   .row-group th {
@@ -618,9 +622,9 @@
   -moz-border-radius: 5px 5px 0 0;
   border-radius: 5px 5px 0 0; }
 
-.ps-ab-right {
+.ps-ab-left {
   position: absolute;
-  right: 0;
+  left: 0;
   height: 100%; }
 
 .height-full {

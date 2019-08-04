@@ -1378,12 +1378,13 @@ body.boxed {
 
 .sidebar {
   width: 240px;
-  background-color: #3A4B55;
+  background-color: #FFFFFF;
   position: absolute;
   top: 0;
   left: 0;
   min-height: 100%;
   z-index: 10;
+  box-shadow: 1px 0 20px rgba(0,0,0,.08);
 }
 .sidebar-right .sidebar {
   left: auto;
@@ -1521,37 +1522,44 @@ body.boxed {
   list-style: none;
   margin: 0 0 35px 0;
   padding: 0;
-  border-bottom: 1px solid #49565D;
+  /* border-bottom: 1px solid #49565D; */
 }
 .navigation li {
   position: relative;
 }
 .navigation > li {
-  border-top: 1px solid #49565D;
+  border-top: 1px solid #ccc;
   position: relative;
+  
 }
 
 .navigation > li.active > a, 
 .navigation > li.active:hover > a, 
 .navigation > li.active:focus > a {
-  color: #fff;
-  background-color: #65B688;
-  border-color: #65B688;
+  color: #54667a;
+  /* background-color: #65B688;
+  border-color: #65B688; */
 }
 .navigation > li.active > a > i {
   opacity: 1;
   filter: alpha(Opacity=100);
 }
+/* sideber li */
 .navigation > li > a {
-  color: rgba(255,255,255,0.8);
+  /* color: rgba(255,255,255,0.8); */
+  color: #54667a;
   padding: 13px 40px 14px 14px;
   display: block;
   border-left: 3px solid transparent;
+  font-size: 14px;
+  font-weight: 500;
 }
+
+/* hover vao thanh li */
 .navigation > li:hover > a {
-  color: #fff;
+  color: #EE8366;
   border-left: 3px solid #EE8366;
-  background-color: #2C3A42;
+  background-color: white;
 }
 .navigation > li:hover > a > i {
   opacity: 1;
@@ -1579,7 +1587,7 @@ body.boxed {
 .navigation > li ul {
   margin: 0;
   padding: 0;
-  background-color: rgba(0, 0, 0, 0.15);
+  background-color: white;
   font-size: 11px;
   list-style: none;
   z-index: 1010;
@@ -1587,7 +1595,7 @@ body.boxed {
 
 
 .sidebar-narrow .navigation > li > ul {
-  background-color: #2D3A42;
+  background-color: white;
 }
 
 .navigation > li ul > li {
@@ -1597,7 +1605,7 @@ body.boxed {
   border-top: 0;
 }
 .navigation > li ul > li.active.has-ul > a, .navigation > li ul > li.active.has-ul > a:hover {
-  background-color: #4A5D64;
+  background-color:rgb(172, 172, 172);
 }
 
 .navigation > li ul > li.active > a, .navigation > li ul > li.active > a:hover {
@@ -1608,7 +1616,7 @@ body.boxed {
 
 .navigation > li ul > li.has-ul > a:after {
   content: "";
-  background: url(../images/interface/plus.png) no-repeat;
+  background: url(../images/interface/plus1.png) no-repeat;
   opacity: 0.4;
   filter: alpha(Opacity=40);
   margin-top: 4px;
@@ -1662,11 +1670,17 @@ body.boxed {
   margin: 4px 2px 6px 0;
   float: right;
   background: url(../images/interface/nav_arrow_right.png) no-repeat;
+  color: #000;
 }
 
 .navigation > li ul > li > a {
   display: block;
   padding: 13px 14px 14px 24px;
+  color: #54667a !important;
+  padding: 12px 35px 12px 15px;
+  display: block;
+  font-size: 14px;
+  font-weight: 300;
 }
 
 .navigation > li ul li a {
@@ -1676,7 +1690,7 @@ body.boxed {
 .navigation > li ul li a:hover,
 .navigation > li ul li a:focus,
 .navigation > li ul li.active > a {
-  color: #fff;
+  color: black;
 }
 
 

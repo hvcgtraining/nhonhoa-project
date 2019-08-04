@@ -399,6 +399,10 @@
         }
     }
 }
+.row-group.tr-parent,
+.row-group.tr-head{
+    border-bottom: 1px solid #eee !important;
+}
 .row-group{
     // .table-defaults .table-head{
     //     th{
@@ -411,6 +415,7 @@
     //     }
     // }
         border-bottom: none !important;
+    
     th{
         background: white;
         color: #333;

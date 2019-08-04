@@ -300,6 +300,10 @@
   .custom-table-1 .table .tbl-content tbody tr td {
     border: 1px solid #88888845; }
 
+.row-group.tr-parent,
+.row-group.tr-head {
+  border-bottom: 1px solid #eee !important; }
+
 .row-group {
   border-bottom: none !important; }
   .row-group th {
