@@ -4,9 +4,9 @@ block main-content
         include ../patials/sidebar.pug
         .page-content
             h1.text-center Tổng hợp tole gia công
-            .row.mg-t3 
-                .col-sm-8
-                    .panel.panel-default(style="margin-bottom:15px")
+            .row.mg-t3.position-re 
+                .col-sm-6.ps-ab-left
+                    .panel.panel-default.height-full.mg-0
                         .panel-heading
                             h6.panel-title
                                 |  Hệ thống quản lý kế hoạch
@@ -20,9 +20,8 @@ block main-content
                                     .form-group.mg-t1.mg-b1
                                         label.control-label Đến ngày:
                                         input.form-control(type='date', name="date")
-            .row.mg-t3
-                .col-sm-12
-                    .panel.panel-default(style="margin-bottom:15px")
+                .col-sm-6.float-right.float-right-none.col-xs-12
+                    .panel.panel-default.mg-0
                         .panel-heading
                             h6.panel-title
                                 |  Chọn :

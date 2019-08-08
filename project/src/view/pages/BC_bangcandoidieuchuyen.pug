@@ -6,15 +6,10 @@ block main-content
             h1.text-center BÁO CÁO NHẬP-XUẤT-TỒN
             h5.text-center Từ Ngày 29/07/2019 Đến Ngày 29/07/2019
             .mt-2
-                .col-12
-                    h5 Bộ phận: K13
-                    h5 Tổng kho: Kho BTP
-
                 .responsive-table-defaults
                     table.table-defaults
                         thead.table-head
                             tr
-                                th 
                                 th STT
                                 th Mã chi tiết
                                 th Tên chi tiết
@@ -23,14 +18,13 @@ block main-content
                                 th Xuất DC
                                 th Xuất SX
                                 th Tồn cuối
+                                th 
                         tbody.table-body
                             tr
                                 td
-                                    .btn-control.row
-                                        button.col-6
-                                            i.fas.fa-edit
-                                        button.col-6
-                                            i.fas.fa-trash-alt
+                                td(style="font-weight: 700 !important") Bộ phận: K13
+                                td(colspan="4" style="font-weight: 700 !important") Tổng kho: Kho BTP 
+                            tr
                                 td 1
                                 td GO2001-914
                                 td Hạt nhựa PP/Trắng
@@ -39,13 +33,13 @@ block main-content
                                 td 
                                 td 0,00
                                 td 55.000,00
-                            tr
                                 td
                                     .btn-control.row
                                         button.col-6
                                             i.fas.fa-edit
                                         button.col-6
                                             i.fas.fa-trash-alt
+                            tr
                                 td 1
                                 td GO2001-914
                                 td Hạt nhựa PP/Trắng
@@ -54,13 +48,13 @@ block main-content
                                 td 
                                 td 0,00
                                 td 55.000,00
-                            tr
                                 td
                                     .btn-control.row
                                         button.col-6
                                             i.fas.fa-edit
                                         button.col-6
                                             i.fas.fa-trash-alt
+                            tr
                                 td 1
                                 td GO2001-914
                                 td Hạt nhựa PP/Trắng
@@ -69,13 +63,13 @@ block main-content
                                 td 
                                 td 0,00
                                 td 55.000,00
-                            tr
                                 td
                                     .btn-control.row
                                         button.col-6
                                             i.fas.fa-edit
                                         button.col-6
                                             i.fas.fa-trash-alt
+                            tr
                                 td 1
                                 td GO2001-914
                                 td Hạt nhựa PP/Trắng
@@ -84,13 +78,13 @@ block main-content
                                 td 
                                 td 0,00
                                 td 55.000,00
-                            tr
                                 td
                                     .btn-control.row
                                         button.col-6
                                             i.fas.fa-edit
                                         button.col-6
                                             i.fas.fa-trash-alt
+                            tr
                                 td 1
                                 td GO2001-914
                                 td Hạt nhựa PP/Trắng
@@ -99,13 +93,13 @@ block main-content
                                 td 
                                 td 0,00
                                 td 55.000,00
-                            tr
                                 td
                                     .btn-control.row
                                         button.col-6
                                             i.fas.fa-edit
                                         button.col-6
                                             i.fas.fa-trash-alt
+                            tr
                                 td 1
                                 td GO2001-914
                                 td Hạt nhựa PP/Trắng
@@ -114,6 +108,12 @@ block main-content
                                 td 
                                 td 0,00
                                 td 55.000,00
+                                td
+                                    .btn-control.row
+                                        button.col-6
+                                            i.fas.fa-edit
+                                        button.col-6
+                                            i.fas.fa-trash-alt
                         tfoot.table-foot
                             tr 
                                 td Tổng

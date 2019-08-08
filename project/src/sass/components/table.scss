@@ -89,11 +89,11 @@
         }
         input[type=button]{
             margin-left: 5px;
-            background-color: #518CA3;
+            background-color: #4f5467c2;
             transition: all .3s ease;
             color: white;
             &:hover{
-                background-color: #65B688;
+                background-color: rgba(0,0,0,.15);
                 transition: all .3s ease;
             }
         }
@@ -122,16 +122,17 @@
     border-spacing: 0;
     width: 100%;
     border: 1px solid #ddd;
-    background-color: #fff;
-    th{
-        white-space: nowrap;
-    }
+    background-color: #fff;   
     th, td {
         border: none;
         text-align: left;
         padding: 10px;
         min-width: 110px;
         font-weight: 400 !important;
+    }
+    th{
+        white-space: nowrap;
+        font-weight: 700 !important;
     }
     tr{
         border-bottom: 1px solid #ccc;
@@ -140,20 +141,49 @@
         }
     }
     .table-head{
-        background-color: #518CA3;
+        background-color: #4f5467c2;
         color: white;
         font-size: 14px;
         text-transform: uppercase;
     }
     .table-foot{
-        background-color: #518CA3;
+        background-color: #4f5467c2;
         color: white;
         font-size: 14px;
         text-transform: uppercase;
     }
     tr:nth-child(even){
-        background-color: #f2f2f2
+        background-color: #f2f2f2;
     }
+    .table-body:nth-child(odd){
+        .row-group{
+
+            th,td{
+                background-color: #e0e0e0;
+            }
+        }
+        .row-group:first-child{
+            th,td{
+                background-color: #4f546787;
+                color: white;
+            }
+        }
+    }
+    .table-body{
+        .row-group{
+
+            th,td{
+                background-color: #fff;
+            }
+        }
+        .row-group:first-child{
+            th,td{
+                background-color: #4f546787;
+                color: white;
+            }
+        }
+    }
+    
 }
 .responsive-table-defaults{
     overflow: auto;
@@ -401,7 +431,7 @@
 }
 .row-group.tr-parent,
 .row-group.tr-head{
-    border-bottom: 1px solid #eee !important;
+    // border-bottom: 1px solid #eee !important;
 }
 .row-group{
     // .table-defaults .table-head{
@@ -414,12 +444,12 @@
     //         color: #333;
     //     }
     // }
-        border-bottom: none !important;
+        border-bottom: 1px solid #a2a4af !important;
     
     th{
         background: white;
         color: #333;
-        font-weight: 700 !important;
+        font-weight: 400 !important;
         font-size: 15px;
     }
     td{

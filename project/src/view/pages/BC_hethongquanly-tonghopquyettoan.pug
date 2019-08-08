@@ -4,9 +4,9 @@ block main-content
         include ../patials/sidebar.pug
         .page-content
             h1.text-center Tổng hợp gia công quản lý
-            .row.mg-t3
-                .col-sm-8
-                    .panel.panel-default(style="margin-bottom:15px")
+            .row.mg-t3.position-re
+                .col-sm-4.ps-ab-left
+                    .panel.panel-default.height-full.mg-0
                         .panel-heading
                             h6.panel-title
                                 |  Hệ thống quản lý kế hoạch
@@ -20,9 +20,8 @@ block main-content
                                     .form-group.mg-t1.mg-b1
                                         label.control-label Đến ngày:
                                         input.form-control(type='date', name="date")
-            .row.mg-t3.position-re
-                .col-sm-6.ps-ab-left
-                    .panel.panel-default.height-full.mg-0
+                .col-sm-4.mgl-33
+                    .panel.panel-default.mg-0
                         .panel-heading
                             h6.panel-title
                                 |  Chọn :
@@ -33,8 +32,18 @@ block main-content
                                         input(type="radio", name="radio", value="12", checked)
                                         span.label-radio
                                             label K14(xưởng 1)
-                .col-sm-6.float-right
-                    .panel.panel-default.mg-0(style="margin-bottom:15px")
+                                .col-sm-12
+                                    .form-group.mg-t1.mg-b1
+                                        input(type="radio", name="radio", value="12", checked)
+                                        span.label-radio
+                                            label K14(xưởng 2)
+                                .col-sm-12
+                                    .form-group.mg-t1.mg-b1
+                                        input(type="radio", name="radio", value="12", checked)
+                                        span.label-radio
+                                            label K14(xưởng 3)
+                .col-sm-4.ps-ab-right
+                    .panel.panel-default.height-full.mg-0
                         .panel-heading
                             h6.panel-title
                                 |  Chọn :
@@ -46,9 +55,16 @@ block main-content
                                         span.label-radio
                                             label In tất cả
                                     .form-group.mg-t1.mg-b1
-                                        input(type="radio", name="radio3", value="2")
-                                        span.label-radio
-                                            label In 1 mã
+                                        .col-sm-6.pd-0
+                                            input(type="radio", name="radio3", value="2")
+                                            span.label-radio
+                                                label In 1 mã
+                                        .col-sm-3.pd-0
+                                            select.form-control(name='select')
+                                                option(value='opt1') AAA
+                                                option(value='opt2') BBB
+                                                option(value='opt3') CCC
+                                                option(value='opt4') DDD
             .form-actions.text-center.mg-b1.mg-t3
                 button.btn.btn-primary.btn-defaults.mg-r3#btnradio(type='submit') In báo cáo
                 button.btn.btn-primary.btn-defaults.mg-r3(type='submit') Thoát

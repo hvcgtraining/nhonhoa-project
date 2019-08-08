@@ -262,8 +262,16 @@
     left: 0;
     height: 100%;
 }
+.ps-ab-right{
+    position: absolute;
+    right: 0;
+    height: 100%;
+}
 .height-full{
     height: 100%;
+}
+.mgl-33{
+    margin-left: 33.3333%;
 }
 .tabs-vertical{
     .nav-tabs{
@@ -396,9 +404,7 @@ input[type=radio]{
     font-size: 18px;
 }
 .label-radio{
-    margin-left: 15px;
-    margin-bottom: 20px;
-    font-size: 18px;
+    padding-left: 10px;
 }
 
 .btn-defaults{
@@ -430,5 +436,16 @@ input[type=radio]{
 @media only screen and (max-width: 767px){
     .set-height-1{
         height: 450px;
+    }
+    .ps-ab-left,
+    .ps-ab-right{
+        position: relative;
+    }
+    .mgl-33{
+        margin-left: 0;
+    }
+    .float-right-none{
+        float: none;
+        margin: 15px 0 !important;
     }
 }
