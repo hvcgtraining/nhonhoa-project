@@ -30,19 +30,21 @@ block main-content
                                 |  Xem bảng cân đối thời gian sử dụng
                         .panel-body
                             .row
-                                .col-sm-6
+                                .col-sm-9
                                     .form-group.mg-t1.mg-b1
                                         input(type="radio", name="radio2", value="2")
                                         label.label-radio Chọn xem chi tiết vật tư theo kho
-                                    .form-group.mg-t1.mg-b1
-                                        input(type="radio", name="radio2", value="1", checked)
-                                        label.label-radio Xem chi tiết vật tư tất cả các kho
-                                .col-sm-2.pd-0
+                                .col-sm-3.col-xs-4                                    
                                     select.form-control(name='select')
                                         option(value='opt1') k10
                                         option(value='opt2') k11
                                         option(value='opt3') k12
                                         option(value='opt4') k13
+                            .row
+                                .col-sm-12
+                                    .form-group.mg-t1.mg-b1
+                                        input(type="radio", name="radio2", value="1", checked)
+                                        label.label-radio Xem chi tiết vật tư tất cả các kho
             .form-actions.text-center.mg-b1.mg-t3
                 button.btn.btn-primary.btn-defaults.mg-r3#btnradio(type='submit') Đồng ý
                 button.btn.btn-primary.btn-defaults.mg-r3(type='submit') Biến
